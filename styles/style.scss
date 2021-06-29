@@ -1,0 +1,14 @@
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  cursor: url(../public/cursor.png), auto;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: 'liga', 'clig';
+  -webkit-font-feature-settings: 'liga', 'clig';
+  font-feature-settings: 'liga', 'clig';
+}
+
+.logo{
+  width: 300px;
+}
