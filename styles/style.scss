@@ -1,5 +1,8 @@
 @import 'neat/neat/';
 
+@import 'variables';
+@import 'mixins';
+
 *{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,6 +14,89 @@
   font-feature-settings: 'liga', 'clig';
 }
 
-.logo{
-  width: 300px;
+body{
+  margin: 0;
+  font-family: $font;
+  color: $black;
+  font-size: 18px;
 }
+
+.container{
+  @include grid-container;
+}
+
+.red { color: $red; }
+
+.subscribeForm-fieldWrap{
+  display: block;
+  margin: 0 0 20px;
+}
+
+.subscribeForm-label{
+  font: $bold 0.8em $font;
+  color: $gray;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.subscribeForm-field{
+  border: 0;
+  background: $lightGray;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  font: 1em $font;
+  color: $black;
+
+  &:focus{
+    outline: none;
+  }
+
+  &::placeholder{
+    opacity: 0.3;
+  }
+}
+
+.subscribeForm-disclaimer{
+  font: 0.8em $font;
+  color: $gray;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  svg{
+    color: $green;
+    min-width: 20px;
+    min-height: 20px;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+  }
+}
+
+.submitBtn{
+  @include button($green, $lightGreen);
+  display: table;
+  margin: 0 auto 20px;
+}
+
+.subscribeForm-safety{
+  text-align: center;
+  font-size: 0.8em;
+  color: $gray;
+}
+
+.subscribeForm-safetyItem{
+  margin-bottom: 5px;
+}
+
+.subscribeForm-safetyIcon{
+  color: $green;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+
+
+@import 'hero';
+
