@@ -1,0 +1,12 @@
+.formBottom{
+  background: url(/bg-folhas.png) $black center no-repeat;
+  padding: 80px 0;
+  background-size: 80% auto;
+}
+
+.formBottom-box{
+  @include grid-column(6);
+  @include grid-push(3);
+  background: #fff;
+  padding: 60px;
+}

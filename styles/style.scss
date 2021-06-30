@@ -97,10 +97,18 @@ body{
   margin-right: 10px;
 }
 
+footer{
+  padding: 60px 30px;
+  background: $black;
+  color: #fff;
+  text-align: center
+}
+
 
 @import 'hero';
 @import 'profile';
 @import 'video';
 @import 'professor';
 @import 'projects';
+@import 'formBottom';
 
