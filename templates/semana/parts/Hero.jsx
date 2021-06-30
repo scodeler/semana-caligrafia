@@ -1,14 +1,6 @@
 import Image from 'next/image'
-import TextInput from '../../../components/TextInput'
-import {
-  FiCalendar,
-  FiPenTool,
-  FiUsers,
-  FiWifi,
-  FiLock,
-  FiAlertCircle,
-} from 'react-icons/fi'
-import { HiCheckCircle } from 'react-icons/hi'
+import { FiCalendar, FiPenTool, FiUsers, FiWifi } from 'react-icons/fi'
+import SubscribeForm from './SubscribeForm'
 
 const Hero = () => {
   return (
@@ -47,41 +39,12 @@ const Hero = () => {
           </li>
         </ul>
       </div>
-      <div className='hero-form subscribeForm'>
-        <figure className='subscribeForm-image'>
+      <div className='hero-form'>
+        <figure className='hero-AuthorImage'>
           <Image src='/reginato.jpg' width='550' height='295' />
         </figure>
-        <div className='subscribeForm-content'>
-          <h3 className='subscribeForm-title'>Inscrição Gratuita</h3>
-          <TextInput
-            label='Nome'
-            name='userName'
-            placeholder='Como quer ser chamada(o)?'
-          />
-          <TextInput
-            label='Email'
-            name='userEmail'
-            placeholder='Qual o seu melhor email?'
-            type='email'
-          />
-          <span className='subscribeForm-disclaimer'>
-            <HiCheckCircle className='subscribeForm-alert' />
-            Ao enviar este formulário você concorda em receber nossas
-            comunicações
-          </span>
-          <button type='submit' className='submitBtn green'>
-            Garantir minha vaga
-          </button>
-          <div className='subscribeForm-safety'>
-            <div className='subscribeForm-safetyItem'>
-              <FiLock className='subscribeForm-safetyIcon' />
-              Suas informações estão seguras!
-            </div>
-            <div className='subscribeForm-safetyItem'>
-              <FiAlertCircle className='subscribeForm-safetyIcon' />
-              Somos contra todo tipo de spam
-            </div>
-          </div>
+        <div className='hero-formContent'>
+          <SubscribeForm />
         </div>
       </div>
     </section>
