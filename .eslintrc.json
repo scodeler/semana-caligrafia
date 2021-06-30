@@ -7,8 +7,7 @@
     "extends": [
         "plugin:react/recommended",
         "standard",
-        "prettier",
-        "prettier/react"
+        "prettier"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -18,14 +17,14 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         "prettier/prettier": "error",
-        "react/jsx-filename-extension" : [
-            "warn",
-            {"extensions": ["js", "jsx"]}
-        ],
+        "space-before-function-paren": "off",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
         "import/prefer-default-export": "off",
         "jsx-quotes": ["error", "prefer-single"]
     }
