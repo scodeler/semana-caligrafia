@@ -5,6 +5,7 @@ import Video from './parts/Video'
 import Professor from './parts/Professor'
 import Projects from './parts/Projects'
 import FormBottom from './parts/FormBottom'
+import Footer from './parts/Footer'
 
 const Semana = () => {
   return (
@@ -18,6 +19,7 @@ const Semana = () => {
       <Professor />
       <Projects />
       <FormBottom />
+      <Footer />
     </>
   )
 }
