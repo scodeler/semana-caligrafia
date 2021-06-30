@@ -3,6 +3,7 @@ import Hero from './parts/Hero'
 import Profile from './parts/Profile'
 import Video from './parts/Video'
 import Professor from './parts/Professor'
+import Projects from './parts/Projects'
 
 const Semana = () => {
   return (
@@ -14,6 +15,7 @@ const Semana = () => {
       <Profile />
       <Video />
       <Professor />
+      <Projects />
     </>
   )
 }
