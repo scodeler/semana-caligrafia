@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import TextInput from '../../components/TextInput'
 import {
   FiCalendar,
   FiPenTool,
@@ -62,30 +63,25 @@ const Semana = () => {
           </figure>
           <div className='subscribeForm-content'>
             <h3 className='subscribeForm-title'>Inscrição Gratuita</h3>
-            <div className='subscribeForm-fieldWrap'>
-              <label className='subscribeForm-label'>Nome</label>
-              <input
-                type='text'
-                className='subscribeForm-field'
-                name='userName'
-                placeholder='Como quer ser chamado'
-              />
-            </div>
-            <div className='subscribeForm-fieldWrap'>
-              <label className='subscribeForm-label'>Email</label>
-              <input
-                type='email'
-                className='subscribeForm-field'
-                name='userName'
-                placeholder='Qual o seu melhor email?'
-              />
-            </div>
+            <TextInput
+              label='Nome'
+              name='userName'
+              placeholder='Como quer ser chamada(o)?'
+            />
+            <TextInput
+              label='Email'
+              name='userEmail'
+              placeholder='Qual o seu melhor email?'
+              type='email'
+            />
             <span className='subscribeForm-disclaimer'>
               <HiCheckCircle className='subscribeForm-alert' />
               Ao enviar este formulário você concorda em receber nossas
               comunicações
             </span>
-            <button className='submitBtn'>Garantir minha vaga</button>
+            <button type='submit' className='submitBtn green'>
+              Garantir minha vaga
+            </button>
             <div className='subscribeForm-safety'>
               <div className='subscribeForm-safetyItem'>
                 <FiLock className='subscribeForm-safetyIcon' />
