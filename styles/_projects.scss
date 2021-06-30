@@ -1,0 +1,28 @@
+.projects{
+  padding: 0 0 80px;
+  background: $lightGray;
+}
+
+.projects-wrapper{
+  @include grid-column(12);
+}
+
+.projects-list{
+  margin: 0;
+  padding: 0;
+  @include grid-container;
+  @include grid-collapse;
+
+  img{
+    display: block;
+  }
+}
+
+.projects-image{
+  list-style: none;
+  background: #fff;
+  @include grid-column(3);
+  margin-bottom: 30px;
+  border: solid 10px #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
