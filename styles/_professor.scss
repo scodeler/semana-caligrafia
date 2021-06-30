@@ -1,0 +1,36 @@
+.professor{
+  padding: 80px 0;
+  background: $lightGray;
+}
+
+.professor-picture{
+  margin: 0;
+  @include grid-column(3);
+  @include grid-push(2);
+  border: solid 10px #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+
+  &::after{
+    content: '';
+    @include imgreplace;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: url(/clip.svg) top center no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 42px;
+  }
+}
+
+.professor-content{
+  @include grid-column(5);
+}
+
+.professor-title{
+  font: $bold 1.6em $font;
+  color: $green;
+  margin: 0 0 20px;
+}
+
