@@ -5,8 +5,7 @@ const TextInput = (props) => {
       <input
         type={props.type ? props.type : 'text'}
         className='subscribeForm-field'
-        name={props.name}
-        placeholder={props.placeholder}
+        {...props}
       />
     </div>
   )
