@@ -29,6 +29,15 @@
   }
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @mixin button($color1: $red, $color2: $orange, $size: big) {
   background-image: linear-gradient(to right, $color1, $color2);
   border-radius: 5px;
@@ -47,15 +56,15 @@
     padding: 10px 20px;
 
     @include grid-media($grid-lg) {
-      padding: 10px 25px;
+      padding: 10px 20px;
     }
   } @else {
     box-shadow: 0 0 40px rgba($color1, 0.5);
     font: $bold 0.9em $font;
-    padding: 15px 35px;
+    padding: 15px 30px;
 
     @include grid-media($grid-lg) {
-      padding: 20px 45px;
+      padding: 20px 40px;
     }
   }
 

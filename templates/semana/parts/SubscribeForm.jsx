@@ -1,35 +1,55 @@
 import TextInput from '../../../components/TextInput'
 import { FiLock, FiAlertCircle } from 'react-icons/fi'
 import { HiCheckCircle } from 'react-icons/hi'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import * as yup from 'yup'
+import axios from 'axios'
 
 const SubscribeForm = () => {
-  const [error, setError] = useState(false)
+  const router = useRouter()
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [valid, setValid] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const schema = yup.object().shape({
     name: yup.string(3).required(),
     email: yup.string().email().required(),
   })
 
+  useEffect(() => {
+    async function triggerValid() {
+      const formIsValid = await schema.isValid({ name, email })
+      setValid(formIsValid)
+    }
+    triggerValid()
+  })
   const handleName = (event) => {
     setName(event.target.value)
   }
 
-  const handleEmail = (event) => {
+  const handleEmail = async (event) => {
     setEmail(event.target.value)
   }
 
   const handleFormSubmit = async (event) => {
     event.preventDefault()
-    const formIsValid = await schema.isValid({ name, email })
-    if (formIsValid) {
-      console.log('sucess')
-      setError(false)
-    } else {
-      setError(true)
+    setLoading(true)
+    const url = 'https://auth.tipocali.com.br/signup'
+    const response = await axios.post(url, {
+      name: name,
+      email: email,
+      tag: 'PL L3',
+    })
+    try {
+      if (response.status === 200) {
+        localStorage.setItem('SemanaCaligrafia_L3', response.data.email)
+      }
+      router.push('/sucesso')
+    } catch (error) {
+      console.log(error)
     }
   }
 
@@ -55,10 +75,11 @@ const SubscribeForm = () => {
         <HiCheckCircle className='subscribeForm-alert' />
         Ao enviar este formulário você concorda em receber nossas comunicações
       </span>
-      {error && (
-        <p className='subscribeForm-error'>Preencha os dados corretamente</p>
-      )}
-      <button type='submit' className='submitBtn green'>
+      <button
+        disabled={!valid}
+        type='submit'
+        className={`submitBtn green ${loading && 'loading'}`}
+      >
         Garantir minha vaga
       </button>
       <div className='subscribeForm-safety'>
