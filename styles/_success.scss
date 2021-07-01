@@ -1,11 +1,14 @@
 .success {
-  background: $black;
   padding: 60px 0;
 
   .hero-title {
     text-align: center;
     @include grid-column(6);
     @include grid-push(3);
+  }
+
+  footer {
+    background: none;
   }
 }
 
