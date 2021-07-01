@@ -19,33 +19,44 @@
   }
 }
 
-@mixin title($color:$red){
+@mixin title($color: $red) {
   font: $displayBold 2em $display;
   color: $color;
   margin: 0 0 30px;
 
-  @include grid-media($grid-lg){
+  @include grid-media($grid-lg) {
     font-size: 2.2em;
   }
 }
 
-@mixin button($color1: $red, $color2: $orange){
+@mixin button($color1: $red, $color2: $orange, $size: big) {
   background-image: linear-gradient(to right, $color1, $color2);
   border-radius: 5px;
   color: $white;
-  font: $bold 0.9em $font;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 15px 35px;
   border: 0;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 0 40px rgba($color1, .5);
-  transition: all .5s;
+  transition: all 0.5s;
   text-align: center;
 
-  @include grid-media($grid-lg){
-    padding: 20px 45px;
+  @if $size == small {
+    box-shadow: 0 0 20px rgba($color1, 0.5);
+    font: $bold 0.8em $font;
+    padding: 10px 20px;
+
+    @include grid-media($grid-lg) {
+      padding: 10px 25px;
+    }
+  } @else {
+    box-shadow: 0 0 40px rgba($color1, 0.5);
+    font: $bold 0.9em $font;
+    padding: 15px 35px;
+
+    @include grid-media($grid-lg) {
+      padding: 20px 45px;
+    }
   }
 
   &[disabled] {
@@ -58,7 +69,7 @@
     border: none;
   }
 
-  &:hover{
+  &:hover {
     transform: translateY(-5px);
   }
 
@@ -78,13 +89,13 @@
     }
   }
 
-  &.unavailable{
-    background: rgba($gray, .5);
+  &.unavailable {
+    background: rgba($gray, 0.5);
     color: $lightGray;
-    box-shadow:none;
+    box-shadow: none;
     cursor: no-drop;
 
-    &:hover{
+    &:hover {
       transform: none;
     }
   }

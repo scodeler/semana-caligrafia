@@ -1,9 +1,7 @@
 import Semana from '../templates/semana'
 
 const Home = () => {
-  return (
-    <Semana />
-  )
+  return <Semana />
 }
 
 export default Home

@@ -3,7 +3,7 @@
 @import 'variables';
 @import 'mixins';
 
-*{
+* {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
@@ -14,25 +14,27 @@
   font-feature-settings: 'liga', 'clig';
 }
 
-body{
+body {
   margin: 0;
   font-family: $font;
   color: $black;
   font-size: 18px;
 }
 
-.container{
+.container {
   @include grid-container;
 }
 
-.red { color: $red; }
+.red {
+  color: $red;
+}
 
-.subscribeForm-fieldWrap{
+.subscribeForm-fieldWrap {
   display: block;
   margin: 0 0 20px;
 }
 
-.subscribeForm-label{
+.subscribeForm-label {
   font: $bold 0.8em $font;
   color: $gray;
   text-transform: uppercase;
@@ -41,7 +43,7 @@ body{
   margin-bottom: 5px;
 }
 
-.subscribeForm-field{
+.subscribeForm-field {
   border: 0;
   background: $lightGray;
   padding: 10px;
@@ -50,23 +52,23 @@ body{
   font: 1em $font;
   color: $black;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 
-  &::placeholder{
+  &::placeholder {
     opacity: 0.3;
   }
 }
 
-.subscribeForm-disclaimer{
+.subscribeForm-disclaimer {
   font: 0.8em $font;
   color: $gray;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 
-  svg{
+  svg {
     color: $green;
     min-width: 20px;
     min-height: 20px;
@@ -75,35 +77,34 @@ body{
   }
 }
 
-.submitBtn{
+.submitBtn {
   @include button($green, $lightGreen);
   display: table;
   margin: 0 auto 20px;
 }
 
-.subscribeForm-safety{
+.subscribeForm-safety {
   text-align: center;
   font-size: 0.8em;
   color: $gray;
 }
 
-.subscribeForm-safetyItem{
+.subscribeForm-safetyItem {
   margin-bottom: 5px;
 }
 
-.subscribeForm-safetyIcon{
+.subscribeForm-safetyIcon {
   color: $green;
   vertical-align: text-bottom;
   margin-right: 10px;
 }
 
-footer{
+footer {
   padding: 60px 30px;
   background: $black;
   color: #fff;
-  text-align: center
+  text-align: center;
 }
-
 
 @import 'hero';
 @import 'profile';
@@ -111,4 +112,4 @@ footer{
 @import 'professor';
 @import 'projects';
 @import 'formBottom';
-
+@import 'success';

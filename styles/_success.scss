@@ -1,0 +1,85 @@
+.success {
+  background: $black;
+  padding: 60px 0;
+
+  .hero-title {
+    text-align: center;
+    @include grid-column(6);
+    @include grid-push(3);
+  }
+}
+
+.success-logo {
+  @include grid-column(4);
+  @include grid-push(4);
+}
+
+.success-message {
+  clear: both;
+  @include grid-column(6);
+  @include grid-push(3);
+  text-align: center;
+  font: 1.2em $font;
+  color: $lightGreen;
+}
+
+.steps {
+  @include grid-column(8);
+  @include grid-push(2);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.step {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 30px;
+}
+
+.step-title {
+  font: $bold 1.5em $font;
+  color: $red;
+  margin: 0 0 20px;
+}
+
+.step-text {
+  margin-bottom: 20px;
+}
+
+.step-buttons {
+  text-align: center;
+}
+
+.step-button {
+  display: inline-table;
+  margin: 0 20px;
+
+  & > svg {
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+  }
+}
+
+.button-zap {
+  @include button($green, $lightGreen, small);
+}
+
+.button-fb {
+  @include button(#15a3fa, #0267e2, small);
+}
+
+.button-ig {
+  @include button(#f04c59, #bd3a96, small);
+}
+
+.button-yt {
+  @include button(#ff0000, #b41111, small);
+}
+
+.button-tg {
+  @include button(#2e87ca, #1868a2, small);
+}

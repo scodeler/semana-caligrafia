@@ -1,21 +1,10 @@
-import { useState } from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
-import TextInput from '../components/TextInput'
+import { ImWhatsapp, ImFacebook2 } from 'react-icons/im'
+import { RiInstagramLine } from 'react-icons/ri'
+import { FaTelegram, FaYoutube } from 'react-icons/fa'
 
 const SuccessPage = () => {
-  const [user, setUser] = useState('@')
-
-  const handleChange = (event) => {
-    setUser(event.target.value)
-    console.log(user)
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    console.log('submitted')
-  }
-
   return (
     <section className='success'>
       <Head>
@@ -45,9 +34,12 @@ const SuccessPage = () => {
               preocupe, o grupo será silenciado e só eu e minha equipe vamos
               mandar mensagens.
             </div>
-            <a href='#' target='_blank' className='step-button-button-zap'>
-              Entrar no Grupo
-            </a>
+            <div className='step-buttons'>
+              <a href='#' target='_blank' className='step-button button-zap'>
+                <ImWhatsapp />
+                Entrar no Grupo
+              </a>
+            </div>
           </li>
           <li className='success-item step'>
             <h3 className='step-title'>3. Entre na Comunidade do Facebook</h3>
@@ -57,9 +49,12 @@ const SuccessPage = () => {
               liberar as apostilas e tarefas para você tirar o maior proveito
               deste evento.
             </div>
-            <a href='#' target='_blank' className='step-button-button-fb'>
-              Entrar na Comunidade
-            </a>
+            <div className='step-buttons'>
+              <a href='#' target='_blank' className='step-button button-fb'>
+                <ImFacebook2 />
+                Entrar na Comunidade
+              </a>
+            </div>
           </li>
           <li className='success-item step'>
             <h3 className='step-title'>4. Me siga nas redes sociais</h3>
@@ -69,38 +64,20 @@ const SuccessPage = () => {
               acompanhe no Instagram, Youtube e Telegram para estar por dentro
               sempre!
             </div>
-            <a href='#' target='_blank' className='step-button-button-ig'>
-              Instagram
-            </a>
-            <a href='#' target='_blank' className='step-button-button-yt'>
-              Youtube
-            </a>
-            <a href='#' target='_blank' className='step-button-button-fb'>
-              Telegram
-            </a>
-          </li>
-          <li className='success-item step'>
-            <h3 className='step-title'>5. Gere seu ticket personalizado</h3>
-            <div className='step-text'>
-              Digite seu usuário do instagram e crie seu ticket personalizado
-              para o evento ficar ainda mais legal!
+            <div className='step-buttons'>
+              <a href='#' target='_blank' className='step-button button-ig'>
+                <RiInstagramLine />
+                Instagram
+              </a>
+              <a href='#' target='_blank' className='step-button button-yt'>
+                <FaYoutube />
+                Youtube
+              </a>
+              <a href='#' target='_blank' className='step-button button-tg'>
+                <FaTelegram />
+                Telegram
+              </a>
             </div>
-            <form className='ticketGenerator' onSubmit={handleSubmit}>
-              <TextInput
-                placeholder='@'
-                name='instagram'
-                label='Seu @ aqui:'
-                value={user}
-                onChange={handleChange}
-              />
-              <button
-                href='#'
-                target='_blank'
-                className='step-button-button-zap'
-              >
-                Gerar convite
-              </button>
-            </form>
           </li>
         </ul>
       </div>
