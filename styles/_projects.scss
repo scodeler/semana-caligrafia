@@ -15,6 +15,10 @@
     @include grid-column(10);
     @include grid-push(2);
   }
+
+  @include grid-media($grid-xs){
+    @include grid-column(4);
+  }
 }
 
 .projects-list{
@@ -36,4 +40,9 @@
   margin-bottom: 30px;
   border: solid 10px #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+  @include grid-media($grid-xs){
+    @include grid-column(2);
+    margin-bottom: 20px;
+  }
 }

@@ -17,17 +17,34 @@ $lineColor: rgba(106,187,222,.25);
     background-image: radial-gradient($lightGray, $lightGray 5px, rgba(#000,.1) 10px, transparent 10px);
     background-size: 40px 40px;
   }
+
+  @include grid-media($grid-xs){
+    &::after{
+      display: none;
+    }
+  }
 }
 
 .hero-left{
   @include grid-column(6);
   @include grid-push(1);
   padding: 60px 0;
+
+  @include grid-media($grid-xs){
+    @include grid-column(4);
+    @include grid-push(0);
+    text-align: center;
+  }
 }
 
 .logo{
   width: 400px;
   margin: 0 0 40px;
+
+  @include grid-media($grid-xs){
+    max-width: 280px;
+    margin: 0 auto 30px;
+  }
 }
 
 .hero-title{
@@ -52,6 +69,13 @@ $lineColor: rgba(106,187,222,.25);
     top: -11px;
   }
 
+  @include grid-media($grid-xs){
+    margin: 0 0 30px;
+    font-size: 1.3em;
+    padding: 30px 20px 20px;
+    text-align: center;
+  }
+
   &::after{ left: 30px; }
   &::before{ right: 30px; }
 }
@@ -60,6 +84,10 @@ $lineColor: rgba(106,187,222,.25);
   @include paragraph;
   margin-bottom: 30px;
   margin-right: 20%;
+  
+  @include grid-media($grid-xs){
+    margin-right: 0;
+  }
 }
 
 .hero-topics{
@@ -85,12 +113,21 @@ $lineColor: rgba(106,187,222,.25);
   color: $black;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
+  @include grid-media($grid-xs){
+    width: 100%;
+  }
 }
 
 .hero-form{
   @include grid-column(4);
   background: #fff;
   box-shadow: 0 0 10px rgba(#000,.1);
+  
+  @include grid-media($grid-xs){
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .hero-AuthorImage{

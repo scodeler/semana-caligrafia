@@ -2,6 +2,11 @@
   background: url(/bg-folhas.png) $black center no-repeat;
   padding: 80px 0;
   background-size: 80% auto;
+
+  @include grid-media($grid-xs){
+    padding: 30px 0;
+    background: $black;
+  }
 }
 
 .formBottom-box{
@@ -9,4 +14,10 @@
   @include grid-push(3);
   background: #fff;
   padding: 60px;
+
+  @include grid-media($grid-xs){
+    @include grid-column(4);
+    @include grid-push(0);
+    padding: 20px;
+  }
 }
