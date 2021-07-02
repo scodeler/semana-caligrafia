@@ -16,6 +16,20 @@ const MyApp = ({ Component, pageProps }) => {
           }}
         />
         <meta charSet='utf-8' />
+        <meta
+          property='og:url'
+          content='http://www.semanadacaligrafia.com.br/'
+        />
+        <meta property='og:title' content='Inscreva-se: Semana da Caligrafia' />
+        <meta
+          property='og:description'
+          content='Transforme suas letras em arte neste evento 100% online e gratuito'
+        />
+        <meta property='og:image' content='/sharing-image.png' />
+        <meta property='og:image:type' content='image/png' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='627' />
+        <meta property='og:type' content='website' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <link rel='stylesheet' href='https://use.typekit.net/fsm0zgf.css' />
         <link rel='icon' href='/favicon.png' />
