@@ -34,17 +34,15 @@ const MyApp = ({ Component, pageProps }) => {
         <link rel='stylesheet' href='https://use.typekit.net/fsm0zgf.css' />
         <link rel='icon' href='/favicon.png' />
       </Head>
-      <body>
-        <noscript>
-          <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-TCG654J'
-            height='0'
-            width='0'
-            style='display:none;visibility:hidden'
-          ></iframe>
-        </noscript>
-        <Component {...pageProps} />
-      </body>
+      <noscript>
+        <iframe
+          src='https://www.googletagmanager.com/ns.html?id=GTM-TCG654J'
+          height='0'
+          width='0'
+          style={{ display: 'none', visibility: 'hidden' }}
+        ></iframe>
+      </noscript>
+      <Component {...pageProps} />
     </>
   )
 }

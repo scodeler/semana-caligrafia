@@ -1,7 +1,7 @@
 import Semana from '../templates/semana'
 
-const Home = () => {
+const HomeIO = () => {
   return <Semana />
 }
 
-export default Home
+export default HomeIO
