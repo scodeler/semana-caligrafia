@@ -5,6 +5,12 @@
   @include grid-media($grid-xs){
     padding: 30px 0;
   }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .professor-picture{
@@ -19,6 +25,16 @@
     @include grid-column(4);
     @include grid-push(0);
     margin-bottom: 30px;
+  }
+
+  @include grid-media($grid-xl){
+    @include grid-column(3);
+    @include grid-push(3);
+  }
+
+  @include grid-media($grid-sm){
+    @include grid-column(3);
+    @include grid-push(0);
   }
 
   &::after{
@@ -40,6 +56,14 @@
   @include grid-media($grid-xs){
     @include grid-column(4);
     @include grid-push(0);
+  }
+
+  @include grid-media($grid-xl){
+    @include grid-column(5);
+  }
+
+  @include grid-media($grid-sm){
+    @include grid-column(5);
   }
 }
 

@@ -5,6 +5,26 @@
     text-align: center;
     @include grid-column(6);
     @include grid-push(3);
+
+    @include grid-media($grid-xl){
+      @include grid-column(6);
+      @include grid-push(4);
+    }
+
+    @include grid-media($grid-xl){
+      @include grid-column(4);
+      @include grid-push(5);
+    }
+
+    @include grid-media($grid-sm){
+      @include grid-column(4);
+      @include grid-push(2);
+    }
+
+    @include grid-media($grid-xs){
+      @include grid-column(4);
+      @include grid-push(0);
+    }
   }
 
   footer {
@@ -15,6 +35,22 @@
 .success-logo {
   @include grid-column(4);
   @include grid-push(4);
+
+  @include grid-media($grid-lg){
+    @include grid-column(4);
+    @include grid-push(5);
+  }
+
+  @include grid-media($grid-sm){
+    @include grid-column(4);
+    @include grid-push(2);
+  }
+
+  @include grid-media($grid-xs){
+    width: 250px;
+    margin: 0 auto 20px;
+    float: none;
+  }
 }
 
 .success-message {
@@ -24,14 +60,47 @@
   text-align: center;
   font: 1.2em $font;
   color: $lightGreen;
+  margin-bottom: 30px;
+
+  @include grid-media($grid-lg){
+    @include grid-column(8);
+    @include grid-push(3);
+  }
+
+  @include grid-media($grid-xs){
+    @include grid-column(4);
+    @include grid-push(0);
+  }
+
+  @include grid-media($grid-sm){
+    @include grid-column(6);
+    @include grid-push(1);
+  }
 }
 
 .steps {
-  @include grid-column(8);
-  @include grid-push(2);
+  @include grid-column(10);
+  @include grid-push(1);
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+
+  @include grid-media($grid-xl){
+    @include grid-column(8);
+    @include grid-push(3);
+  }
+
+  @include grid-media($grid-sm){
+    @include grid-column(8);
+    @include grid-push(0);
+  }
+
+  @include grid-media($grid-xs){
+    @include grid-column(4);
+    @include grid-push(0);
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
 }
 
 .step {
@@ -40,12 +109,20 @@
   margin-bottom: 30px;
   list-style: none;
   padding: 30px;
+
+  @include grid-media($grid-xs){
+    padding: 20px;
+  }
 }
 
 .step-title {
   font: $bold 1.5em $font;
   color: $red;
   margin: 0 0 20px;
+
+  @include grid-media($grid-xs){
+    font-size: 1.2em;
+  }
 }
 
 .step-text {
@@ -54,6 +131,12 @@
 
 .step-buttons {
   text-align: center;
+  
+  @include grid-media($grid-xs){}
+  .step-button{
+    display: table;
+    margin: 0 auto 10px;
+  }
 }
 
 .step-button {
@@ -64,6 +147,14 @@
     font-size: 20px;
     margin-right: 10px;
     vertical-align: text-bottom;
+  }
+
+  @include grid-media($grid-xs){
+    margin: 0 0 10px;
+
+    & > svg{
+      font-size: 16px;
+    }
   }
 }
 

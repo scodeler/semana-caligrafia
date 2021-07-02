@@ -15,6 +15,11 @@
   background: #fff;
   padding: 60px;
 
+  @include grid-media($grid-xl){
+    @include grid-column(6);
+    @include grid-push(4);
+  }
+
   @include grid-media($grid-xs){
     @include grid-column(4);
     @include grid-push(0);

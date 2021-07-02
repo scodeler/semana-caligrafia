@@ -19,6 +19,18 @@
     padding: 35px 20px;
   }
 
+  @include grid-media($grid-xl){
+    @include grid-column(8);
+    @include grid-push(3);
+    padding: 100px;
+  }
+
+  @include grid-media($grid-sm){
+    @include grid-column(6);
+    @include grid-push(1);
+    padding: 35px 25px;
+  }
+
   &::before{
     content: '';
     background: $lightPink;
@@ -42,7 +54,7 @@
     width: 170px;
     height: 144px;
 
-    @include grid-media($grid-xs){
+    @include grid-media($grid-xs, $grid-sm){
       width: #{170*.6}px;
       height: #{144*0.6}px;
     }

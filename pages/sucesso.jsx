@@ -24,9 +24,15 @@ const SuccessPage = () => {
           <li className='success-item step'>
             <h3 className='step-title'>1. Confirme seu e-mail</h3>
             <div className='step-text'>
-              Confirme se recebeu meu e-mail de boas vindas. Certifique-se de
-              que não foi para o Spam (pode ser que demore alguns minutos até
-              chegar aí)
+              <p>
+                É importante também que você me RESPONDA, dizendo o que você
+                espera do evento para que eu possa trazer muita informação legal
+                pra você!{' '}
+              </p>
+              <p>
+                Certifique-se de que não foi para o Spam (pode ser que demore
+                alguns minutos até chegar aí).
+              </p>
             </div>
           </li>
           <li className='success-item step'>
@@ -52,7 +58,12 @@ const SuccessPage = () => {
               deste evento.
             </div>
             <div className='step-buttons'>
-              <a href='#' target='_blank' className='step-button button-fb'>
+              <a
+                href='https://www.facebook.com/groups/semanadacaligrafia'
+                target='_blank'
+                className='step-button button-fb'
+                rel='noreferrer'
+              >
                 <ImFacebook2 />
                 Entrar na Comunidade
               </a>
@@ -67,15 +78,30 @@ const SuccessPage = () => {
               sempre!
             </div>
             <div className='step-buttons'>
-              <a href='#' target='_blank' className='step-button button-ig'>
+              <a
+                href='https://www.instagram.com/tipocali/'
+                target='_blank'
+                className='step-button button-ig'
+                rel='noreferrer'
+              >
                 <RiInstagramLine />
                 Instagram
               </a>
-              <a href='#' target='_blank' className='step-button button-yt'>
+              <a
+                href='https://www.youtube.com/tipocali'
+                target='_blank'
+                className='step-button button-yt'
+                rel='noreferrer'
+              >
                 <FaYoutube />
                 Youtube
               </a>
-              <a href='#' target='_blank' className='step-button button-tg'>
+              <a
+                href='https://t.me/tipocali'
+                target='_blank'
+                className='step-button button-tg'
+                rel='noreferrer'
+              >
                 <FaTelegram />
                 Telegram
               </a>

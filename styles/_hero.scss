@@ -18,7 +18,7 @@ $lineColor: rgba(106,187,222,.25);
     background-size: 40px 40px;
   }
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs, $grid-sm){
     &::after{
       display: none;
     }
@@ -35,13 +35,23 @@ $lineColor: rgba(106,187,222,.25);
     @include grid-push(0);
     text-align: center;
   }
+
+  @include grid-media($grid-xl){
+    @include grid-column(6);
+    @include grid-push(2);
+  }
+
+  @include grid-media($grid-sm){
+    @include grid-column(4);
+    @include grid-push(0);
+  }
 }
 
 .logo{
   width: 400px;
   margin: 0 0 40px;
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs, $grid-sm){
     max-width: 280px;
     margin: 0 auto 30px;
   }
@@ -57,6 +67,7 @@ $lineColor: rgba(106,187,222,.25);
   position: relative;
   box-shadow: 0 10px 10px rgba(0,0,0,.16);
   margin-right: 20%;
+  text-align: center;
 
   &::after,
   &::before{
@@ -69,7 +80,7 @@ $lineColor: rgba(106,187,222,.25);
     top: -11px;
   }
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs, $grid-sm){
     margin: 0 0 30px;
     font-size: 1.3em;
     padding: 30px 20px 20px;
@@ -85,7 +96,7 @@ $lineColor: rgba(106,187,222,.25);
   margin-bottom: 30px;
   margin-right: 20%;
   
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs, $grid-sm){
     margin-right: 0;
   }
 }
@@ -114,7 +125,7 @@ $lineColor: rgba(106,187,222,.25);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs, $grid-sm){
     width: 100%;
   }
 }
@@ -127,6 +138,15 @@ $lineColor: rgba(106,187,222,.25);
   @include grid-media($grid-xs){
     width: 100%;
     margin: 0;
+  }
+
+  @include grid-media($grid-xl){
+    @include grid-column(4);
+    @include grid-push(0);
+  }
+  
+  @include grid-media($grid-sm){
+    @include grid-column(4);
   }
 }
 

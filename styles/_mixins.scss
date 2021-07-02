@@ -58,6 +58,12 @@
     @include grid-media($grid-lg) {
       padding: 10px 20px;
     }
+
+    @include grid-media($grid-xs) {
+      padding: 10px 15px;
+      font-size: 0.8em;
+    }
+
   } @else {
     box-shadow: 0 0 40px rgba($color1, 0.5);
     font: $bold 0.9em $font;
@@ -65,6 +71,10 @@
 
     @include grid-media($grid-lg) {
       padding: 20px 40px;
+    }
+
+    @include grid-media($grid-xs) {
+      padding: 15px 25px;
     }
   }
 
