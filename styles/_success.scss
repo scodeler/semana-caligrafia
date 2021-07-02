@@ -109,6 +109,7 @@
   margin-bottom: 30px;
   list-style: none;
   padding: 30px;
+  text-align: center;
 
   @include grid-media($grid-xs){
     padding: 20px;
@@ -132,16 +133,17 @@
 .step-buttons {
   text-align: center;
   
-  @include grid-media($grid-xs){}
-  .step-button{
-    display: table;
-    margin: 0 auto 10px;
+  @include grid-media($grid-xs){
+    .step-button{
+      display: table;
+      margin: 0 auto 10px;
+    }
   }
 }
 
 .step-button {
   display: inline-table;
-  margin: 0 20px;
+  margin: 0 20px 10px;
 
   & > svg {
     font-size: 20px;
