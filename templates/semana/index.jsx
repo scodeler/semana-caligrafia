@@ -6,17 +6,17 @@ import Projects from './parts/Projects'
 import FormBottom from './parts/FormBottom'
 import Footer from './parts/Footer'
 
-const Semana = () => {
+const Semana = props => {
   return (
     <>
       <Head>
         <title>Semana da Caligrafia</title>
       </Head>
-      <Hero />
+      <Hero mediaPrefix={props.mediaPrefix} />
       <Profile />
       <Professor />
       <Projects />
-      <FormBottom />
+      <FormBottom mediaPrefix={props.mediaPrefix} />
       <Footer />
     </>
   )

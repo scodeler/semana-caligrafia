@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { FiCalendar, FiPenTool, FiUsers, FiWifi } from 'react-icons/fi'
 import SubscribeForm from './SubscribeForm'
 
-const Hero = () => {
+const Hero = props => {
   return (
     <section className='hero'>
       <div className='container'>
@@ -50,7 +50,7 @@ const Hero = () => {
             <Image src='/reginato.jpg' width='550' height='295' />
           </figure>
           <div className='hero-formContent'>
-            <SubscribeForm />
+            <SubscribeForm mediaPrefix={props.mediaPrefix} />
           </div>
         </div>
       </div>

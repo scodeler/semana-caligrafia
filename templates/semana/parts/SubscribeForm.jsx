@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import * as yup from 'yup'
 import axios from 'axios'
 
-const SubscribeForm = () => {
+const SubscribeForm = props => {
   const router = useRouter()
 
   const [name, setName] = useState('')
@@ -26,15 +26,15 @@ const SubscribeForm = () => {
     }
     triggerValid()
   })
-  const handleName = (event) => {
+  const handleName = event => {
     setName(event.target.value)
   }
 
-  const handleEmail = async (event) => {
+  const handleEmail = async event => {
     setEmail(event.target.value)
   }
 
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async event => {
     event.preventDefault()
     setLoading(true)
     const url = 'https://auth.tipocali.com.br/signup'
@@ -47,7 +47,11 @@ const SubscribeForm = () => {
       if (response.status === 200) {
         localStorage.setItem('SemanaCaligrafia_L3', response.data.email)
       }
-      router.push('/sucesso')
+      if (props.mediaPrefix) {
+        router.push(`/sucesso-${props.mediaPrefix}`)
+      } else {
+        router.push(`/sucesso`)
+      }
     } catch (error) {
       console.log(error)
     }

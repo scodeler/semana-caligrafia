@@ -1,7 +1,7 @@
 import Semana from '../templates/semana'
 
 const HomeFA = () => {
-  return <Semana />
+  return <Semana mediaPrefix='fa' />
 }
 
 export default HomeFA
