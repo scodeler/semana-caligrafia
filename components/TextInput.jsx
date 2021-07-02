@@ -1,4 +1,4 @@
-const TextInput = (props) => {
+const TextInput = props => {
   return (
     <div className='subscribeForm-fieldWrap'>
       <label className='subscribeForm-label'>{props.label}</label>
