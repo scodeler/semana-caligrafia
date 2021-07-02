@@ -8,11 +8,11 @@ const Professor = () => {
           <Image src='/thiago-reginato.jpg' width='595' height='625' />
         </figure>
         <div className='professor-content'>
-          <h3 className='professor-title'>Serei seu guia nestes 7 dias</h3>
+          <h3 className='professor-title'>Serei seu guia nesta jornada</h3>
           <div className='professor-text'>
             <p>
               Me chamo Thiago Reginato, conhecido como TIPOCALI no meio
-              artístico. Tenho mais de 10 anos de experiência com a letras e
+              artístico. Tenho mais de 10 anos de experiência com as letras e
               vários projetos premiados.
             </p>
             <p>
