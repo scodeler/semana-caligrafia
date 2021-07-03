@@ -20,10 +20,10 @@ const Hero = props => {
           </h2>
           <div className='hero-text'>
             <p>
-              Vou te mostrar tudo o que eu fiz e que me ajudou a chegar onde eu
-              cheguei, para você deixar se ser só um espectador e{' '}
-              <strong className='red'>entrar no mundo mágico das letras</strong>{' '}
-              de uma vez.
+              Vou te contar o passo a passo, letra por letra, o caminho para
+              você deixar de ser só um espectador e entrar no mundo mágico das
+              letras de uma vez, mesmo que não tenha conhecimento do assunto ou
+              se sinta seguro.
             </p>
           </div>
           <ul className='hero-topics'>
