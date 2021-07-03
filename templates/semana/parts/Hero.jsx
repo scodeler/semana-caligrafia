@@ -22,8 +22,11 @@ const Hero = props => {
             <p>
               Vou te contar o passo a passo, letra por letra, o caminho para
               você deixar de ser só um espectador e entrar no mundo mágico das
-              letras de uma vez, mesmo que não tenha conhecimento do assunto ou
-              se sinta seguro.
+              letras de uma vez,{' '}
+              <strong className='red'>
+                mesmo que não tenha conhecimento do assunto ou se sinta seguro
+              </strong>
+              .
             </p>
           </div>
           <ul className='hero-topics'>

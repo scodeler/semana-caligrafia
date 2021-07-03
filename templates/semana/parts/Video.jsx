@@ -7,7 +7,7 @@ const VideoEmbed = () => {
             <iframe
               width='560'
               height='315'
-              src='https://www.youtube.com/embed/YVQqEoSXV8Q'
+              src='https://www.youtube.com/embed/3ju5dF10kE0'
               title='YouTube video player'
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
