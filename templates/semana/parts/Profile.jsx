@@ -15,8 +15,8 @@ const Profile = () => {
             </li>
             <li className='profileTop'>
               <strong>Apaixonados por arte:</strong> Você ama atividades
-              manuais, adora escrever de maneira bonita mas não se sente
-              preparado ou inseguro, essa semana é para você
+              manuais, adora escrever de maneira bonita mas se sente
+              despreparada(o) ou insegura(o), essa semana é para você
             </li>
             <li className='profileTop'>
               <strong>Tempo de paz e relaxamento:</strong> Caso a sua rotina
