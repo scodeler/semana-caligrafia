@@ -43,7 +43,11 @@ const SuccessPageWA = () => {
               mandar mensagens.
             </div>
             <div className='step-buttons'>
-              <a href='#' target='_blank' className='step-button button-zap'>
+              <a
+                href='/whatsapp'
+                target='_blank'
+                className='step-button button-zap'
+              >
                 <ImWhatsapp />
                 Entrar no Grupo
               </a>

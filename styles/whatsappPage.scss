@@ -1,0 +1,26 @@
+.whatsappRedirect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $black;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+@keyframes bounce{
+  from{
+    transform: translateY(0);
+  } to{
+    transform: translateY(-10px);
+  }
+}
+
+.whatsappIcon{
+  color: $lightGreen;
+  font-size: 2em;
+  animation: bounce .3s alternate infinite ease-out
+}
