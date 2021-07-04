@@ -19,19 +19,23 @@ const SuccessPageEM = () => {
         <div className='success-message'>
           <p>Parabéns pela iniciativa de se inscrever nesta jornada!</p>
         </div>
-        <h2 className='hero-title'>Os próximos 5 passos</h2>
+        <h2 className='hero-title'>Os próximos passos</h2>
         <ul className='success-list steps'>
           <li className='success-item step'>
             <h3 className='step-title'>1. Confirme seu e-mail</h3>
             <div className='step-text'>
               <p>
-                É importante também que você me RESPONDA, dizendo o que você
-                espera do evento para que eu possa trazer muita informação legal
-                pra você!{' '}
+                Enviamos pra você um e-mail de confirmação (pode ser que demore
+                uns minutos pra chegar). Lá você vai encontrar orientações
+                importantes para nosso Workshop.
               </p>
               <p>
-                Certifique-se de que não foi para o Spam (pode ser que demore
-                alguns minutos até chegar aí).
+                É importante que você me RESPONDA no e-mail qual é sua maior
+                expectativa neste evento, pra eu poder trazer muita informação
+                legal pra você.
+              </p>
+              <p>
+                Ah, certifique-se de que não foi para o SPAM. Às vezes acontece.
               </p>
             </div>
           </li>
@@ -43,7 +47,11 @@ const SuccessPageEM = () => {
               mandar mensagens.
             </div>
             <div className='step-buttons'>
-              <a href='#' target='_blank' className='step-button button-zap'>
+              <a
+                href='/whatsapp'
+                target='_blank'
+                className='step-button button-zap'
+              >
                 <ImWhatsapp />
                 Entrar no Grupo
               </a>
@@ -52,10 +60,14 @@ const SuccessPageEM = () => {
           <li className='success-item step'>
             <h3 className='step-title'>3. Entre na Comunidade do Facebook</h3>
             <div className='step-text'>
-              Nesta comunidade vamos construir um ambiente de troca, em que
-              vamos estar juntos nesta semana de tanto aprendizado. Lá vamos
-              liberar as apostilas e tarefas para você tirar o maior proveito
-              deste evento.
+              <p>
+                Não temos sala de aula mas temos uma Comunidade! Eu acho
+                fundamental essa troca entre eu e você, e entre você e a turma.
+              </p>
+              <p>
+                Lá, eu também vou liberar os materiais e algumas tarefas,
+                importantes para você tirar o maior proveito do workshop.
+              </p>
             </div>
             <div className='step-buttons'>
               <a
