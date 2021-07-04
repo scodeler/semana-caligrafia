@@ -12,6 +12,13 @@ const SuccessPageEM = () => {
       <Head>
         <title>Parabéns por se inscrever!</title>
       </Head>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          ga('send', 'conversao-sdc');      
+      `,
+        }}
+      />
       <div className='container'>
         <h1 className='success-logo'>
           <Image src='/logo.png' width='430' height='200' layout='responsive' />
