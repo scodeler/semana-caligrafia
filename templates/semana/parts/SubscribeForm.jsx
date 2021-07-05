@@ -13,6 +13,7 @@ const SubscribeForm = props => {
   const [email, setEmail] = useState('')
   const [valid, setValid] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [hasError, setError] = useState(false)
 
   const schema = yup.object().shape({
     name: yup.string(3).required(),
@@ -38,12 +39,12 @@ const SubscribeForm = props => {
     event.preventDefault()
     setLoading(true)
     const url = 'https://auth.tipocali.com.br/signup'
-    const response = await axios.post(url, {
-      name: name,
-      email: email,
-      tag: 'PL L3',
-    })
     try {
+      const response = await axios.post(url, {
+        name: name,
+        email: email,
+        tag: 'PL L3',
+      })
       if (response.status === 200) {
         localStorage.setItem('SemanaCaligrafia_L3', response.data.email)
       }
@@ -53,6 +54,8 @@ const SubscribeForm = props => {
         router.push(`/sucesso`)
       }
     } catch (error) {
+      setError(true)
+      setLoading(false)
       console.log(error)
     }
   }
@@ -79,6 +82,11 @@ const SubscribeForm = props => {
         <HiCheckCircle className='subscribeForm-alert' />
         Ao enviar este formulário você concorda em receber nossas comunicações
       </span>
+      {hasError && (
+        <div className='subscribeForm-error'>
+          Ocorreu um erro. Tente usar outro email
+        </div>
+      )}
       <button
         disabled={!valid}
         type='submit'
