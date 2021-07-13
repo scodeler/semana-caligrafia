@@ -1,0 +1,166 @@
+.classesPage {
+  background-image: repeating-linear-gradient(
+    0deg,
+    $lineColor,
+    $lineColor 1px,
+    $lightGray 1px,
+    $lightGray 20px,
+    $lineColor 20px,
+    $lineColor 21px,
+    $lightGray 21px,
+    $lightGray
+  );
+  background-size: 60px 60px;
+  background-position: top left;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    background-image: radial-gradient(
+      $lightGray,
+      $lightGray 5px,
+      rgba(#000, 0.1) 10px,
+      transparent 10px
+    );
+    background-size: 40px 40px;
+  }
+
+  @include grid-media($grid-xs, $grid-sm) {
+    &::after {
+      display: none;
+    }
+  }
+
+  .logo {
+    margin: 0 auto 50px;
+  }
+}
+
+.classes {
+  @include grid-column(8);
+  @include grid-push(2);
+}
+
+.classes-video {
+  margin-bottom: 30px;
+}
+
+.classes-embed {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: #{9 / 16 * 100%};
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.classesMenu-list {
+  padding: 0;
+  margin: 0;
+}
+
+.classesMenu-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background: $lightGray;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba($black, 0.1);
+
+  * {
+    cursor: pointer;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &.locked {
+    * {
+      opacity: 0.7;
+      cursor: no-drop;
+    }
+  }
+}
+
+.classItem-icon {
+  font-size: 1.4em;
+  color: $green;
+  margin-right: 20px;
+}
+
+.classItem-text {
+  flex: 1;
+}
+
+.classesMenu {
+  margin-bottom: 40px;
+}
+
+.classesMenu-label {
+  margin: 0;
+  font: $bold 0.8em $font;
+  color: $red;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.classesMenu-title {
+  margin: 0;
+  font: $bold 1.3em $font;
+  color: $black;
+}
+
+.classItem-status {
+  background: $lightBlue;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font: $bold 0.9em $font;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  svg {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+  }
+}
+
+.classes-bottom {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.classItem-meta {
+  text-align: center;
+}
+
+.classItem-watching {
+  @include button($green, $lightGreen, small);
+  display: block;
+}
+
+.classItem-watch {
+  @include button($red, $orange, small);
+  display: block;
+}
+
+.facebook-button {
+  @include button(#15a3fa, #0267e2);
+}

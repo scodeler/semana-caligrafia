@@ -1,0 +1,58 @@
+const classes = [
+  {
+    index: 1,
+    label: 'Aula 1',
+    type: 'class',
+    date: 'SEG - 19/07',
+    videoId: 'l0ilUaa771Y',
+    title: 'Um mundo de possibilidades',
+    locked: false,
+  },
+  {
+    index: 2,
+    label: 'Live',
+    type: 'live',
+    date: 'TER - 20/07',
+    videoId: 'rHqLAe47iaI',
+    title: 'Exercícios Aula 01',
+    locked: false,
+  },
+  {
+    index: 3,
+    label: 'Aula 2',
+    type: 'class',
+    date: 'QUA - 21/07',
+    videoId: 'gHklC5-EohQ',
+    title: 'Suas primeiras peças caligrafadas',
+    locked: true,
+  },
+  {
+    index: 4,
+    label: 'Live',
+    type: 'live',
+    date: 'QUI - 22/07',
+    videoId: 'w1H7-_RMs2Q',
+    title: 'Exercícios Aula 02',
+    locked: true,
+  },
+  {
+    index: 5,
+    label: 'Aula 3',
+    type: 'class',
+    date: 'SEX - 23/07',
+    videoId: 'soVmlWRDFM0',
+    title: 'Transformando letras em arte',
+    locked: true,
+  },
+  {
+    index: 6,
+    label: 'Live',
+    type: 'live',
+    date: 'SÁB - 24/07',
+    videoId: '9yqdmgsthqY',
+    title: 'Dúvidas gerais',
+    locked: true,
+  },
+]
+
+export default classes

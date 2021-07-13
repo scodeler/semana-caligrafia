@@ -99,14 +99,14 @@ body {
   margin-right: 10px;
 }
 
-.subscribeForm-error{
+.subscribeForm-error {
   color: $red;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   padding: 5px 10px;
   border: solid 1px $red;
   border-radius: 3px;
-  background: rgba($red, .2);
+  background: rgba($red, 0.2);
   margin-bottom: 20px;
 }
 
@@ -126,3 +126,4 @@ footer {
 @import 'formBottom';
 @import 'success';
 @import 'whatsappPage';
+@import 'classes';
