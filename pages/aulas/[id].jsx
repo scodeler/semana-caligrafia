@@ -31,7 +31,8 @@ const Aula = () => {
                     <Classes id={currentClass[0].videoId} />
                     <Head>
                       <title>
-                        {currentClass[0].title} [{src}] - Semana da Caligrafia
+                        {currentClass[0].title} {src && `[${src}]`} - Semana da
+                        Caligrafia
                       </title>
                     </Head>
                   </>
