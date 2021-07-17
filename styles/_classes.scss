@@ -43,12 +43,37 @@
 }
 
 .classes {
-  @include grid-column(8);
-  @include grid-push(2);
+  @include grid-column(10);
+  @include grid-push(1);
+
+  @include grid-media($grid-sm){
+    @include grid-column(8);
+    @include grid-push(0);
+  }
+
+  @include grid-media($grid-lg){
+    @include grid-column(14);
+    @include grid-push(0);
+  }
+
+  @include grid-media($grid-xs){
+    @include grid-column(4);
+    @include grid-push(0);
+  }
+}
+
+.videos{
+  @include grid-media($grid-lg){
+    @include grid-collapse;
+    @include grid-container;
+  }
 }
 
 .classes-video {
   margin-bottom: 30px;
+  @include grid-media($grid-lg){
+    @include grid-column(8);
+  }
 }
 
 .classes-embed {
@@ -66,6 +91,15 @@
   }
 }
 
+.classesMenu{
+  @include grid-media($grid-lg){
+    @include grid-column(6);
+    background: $lightPink;
+    padding: 20px 30px;
+    border-radius: 20px;
+  }
+}
+
 .classesMenu-list {
   padding: 0;
   margin: 0;
@@ -76,11 +110,16 @@
   display: flex;
   align-items: center;
   padding: 30px;
-  background: $lightGray;
   cursor: pointer;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba($black, 0.1);
+
+  @include grid-media($grid-lg){
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
 
   * {
     cursor: pointer;
@@ -93,6 +132,7 @@
   &.locked {
     * {
       opacity: 0.7;
+      filter: grayscale(100%);
       cursor: no-drop;
     }
   }
@@ -106,6 +146,9 @@
 
 .classItem-text {
   flex: 1;
+  @include grid-media($grid-lg){
+    width: 100%;
+  }
 }
 
 .classesMenu {
@@ -124,12 +167,17 @@
   margin: 0;
   font: $bold 1.3em $font;
   color: $black;
+  margin-right: 15px;
+
+  @include grid-media($grid-lg){
+    font-size: 1em;
+  }
 }
 
 .classItem-status {
   background: $lightBlue;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   font: $bold 0.9em $font;
@@ -137,13 +185,13 @@
   margin-bottom: 10px;
 
   svg {
-    vertical-align: text-bottom;
-    margin-right: 5px;
+    display: block;
   }
 }
 
 .classes-bottom {
   margin-bottom: 50px;
+  clear: both;
   text-align: center;
 }
 
@@ -151,14 +199,27 @@
   text-align: center;
 }
 
-.classItem-watching {
-  @include button($green, $lightGreen, small);
+.classItem-watch{
+  color: $gray;
+  opacity: 0.6;
+  border-radius: 50%;
+  font-size: 2em;
   display: block;
+
+  & > svg{
+    display: block;
+  }
 }
 
-.classItem-watch {
-  @include button($red, $orange, small);
+.classItem-watching {
+  color: $green;
+  border-radius: 50%;
+  font-size: 2em;
   display: block;
+
+  & > svg{
+    display: block;
+  }
 }
 
 .facebook-button {
