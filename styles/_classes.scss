@@ -193,6 +193,10 @@
   margin-bottom: 50px;
   clear: both;
   text-align: center;
+
+  a{
+    margin: 0 15px;
+  }
 }
 
 .classItem-meta {
@@ -224,4 +228,8 @@
 
 .facebook-button {
   @include button(#15a3fa, #0267e2);
+}
+
+.link-testimonials{
+  @include button
 }

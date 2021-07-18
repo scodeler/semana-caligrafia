@@ -80,14 +80,17 @@ const Classes = props => {
             <IoLogoFacebook />
             Acessar comunidade no Facebook
           </a>
-          <div className='fbComments'>
-            <div
-              className='fb-comments'
-              data-href={`https://semanadacaligrafia.com.br/aulas/${videoIndex}`}
-              data-width='100%'
-              data-numposts='20'
-            ></div>
-          </div>
+          <a href='/historias' className='link-testimonials'>
+            Histórias de alunos
+          </a>
+        </div>
+        <div className='fbComments'>
+          <div
+            className='fb-comments'
+            data-href={`https://semanadacaligrafia.com.br/aulas/${videoIndex}`}
+            data-width='100%'
+            data-numposts='20'
+          ></div>
         </div>
       </div>
     </section>
