@@ -1,0 +1,70 @@
+.historias{
+  background: $black;
+  padding: 80px 0;
+  color: $white;
+
+  .success-logo{
+    margin-bottom: 60px;
+  }
+}
+
+.historias-title{
+  margin: 0 0 40px;
+  @include grid-column(10);
+  @include grid-push(1);
+  text-align: center;
+  color: $lightGreen;
+}
+
+.historias-wrapper{
+  @include grid-column(12);
+}
+
+.historias-list{
+  @include grid-container;
+  @include grid-collapse;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonial{
+  @include grid-column(6);
+  margin-bottom: 40px;
+  list-style: none;
+  text-align: center;
+
+  @include grid-media($grid-lg){
+    @include grid-column(4 of 12)
+  }
+
+  @include grid-media($grid-xs){
+    @include grid-column(4)
+  }
+}
+
+.testimonial-embed{
+  position: relative;
+  padding-bottom: #{9 / 16 * 100%};
+  margin-bottom: 20px;
+  height: 0;
+  iframe{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+.testimonial-title{
+  color: $red;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font: $bold 0.9em $font;
+  margin: 0 0 5px;
+}
+
+.testimonial-text{
+  font-size: 1.4em;
+}
