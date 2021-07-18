@@ -14,7 +14,7 @@ const Historias = () => {
           <Image src='/logo.png' width='430' height='200' layout='responsive' />
         </h1>
         <div className='container'>
-          <h2 className='historias-title'>Histórias caligráficas</h2>
+          <h2 className='historias-title'>Histórias reais</h2>
           <div className='historias-wrapper'>
             <ul className='historias-list'>
               {testimonials.map(testimonial => (
