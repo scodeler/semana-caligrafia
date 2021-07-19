@@ -2,22 +2,12 @@ import { useRouter } from 'next/router'
 import { FiLock, FiPenTool } from 'react-icons/fi'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import { IoLogoFacebook } from 'react-icons/io'
-import { ImWhatsapp } from 'react-icons/im'
 import classes from '../../classes'
 
 const Classes = props => {
   const router = useRouter()
-  const { id } = router.query
   return (
     <section className='classes'>
-      <div id='fb-root'></div>
-      <script
-        async
-        defer
-        crossOrigin='anonymous'
-        src='https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0&appId=118451698259367&autoLogAppEvents=1'
-        nonce='3tpY9zI7'
-      ></script>
       <div className='videos'>
         <div className='classes-video'>
           <div className='classes-embed'>
@@ -94,15 +84,6 @@ const Classes = props => {
             <FiPenTool />
             Histórias de alunos
           </a>
-        </div>
-        <div className='fbComments'>
-          <div
-            className='fb-comments'
-            data-href={`https://semanadacaligrafia.com.br/aulas/${id}`}
-            data-width='100%'
-            data-numposts='20'
-            data-order-by='reverse_time'
-          ></div>
         </div>
       </div>
     </section>

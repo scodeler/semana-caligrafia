@@ -13,6 +13,14 @@ const Aula = () => {
 
   return (
     <>
+      <div id='fb-root'></div>
+      <script
+        async
+        defer
+        crossOrigin='anonymous'
+        src='https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0&appId=118451698259367&autoLogAppEvents=1'
+        nonce='3tpY9zI7'
+      ></script>
       <section className='classesPage'>
         <div className='container'>
           <h1 className='logo'>
@@ -38,6 +46,15 @@ const Aula = () => {
                   </>
                 )
             )}
+        </div>
+        <div className='fbComments'>
+          <div
+            className='fb-comments'
+            data-href={`https://semanadacaligrafia.com.br/aulas/${id}`}
+            data-width='100%'
+            data-numposts='20'
+            data-order-by='reverse_time'
+          ></div>
         </div>
       </section>
       <Footer />
