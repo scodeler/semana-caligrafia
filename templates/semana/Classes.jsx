@@ -7,7 +7,7 @@ import classes from '../../classes'
 
 const Classes = props => {
   const router = useRouter()
-  const { videoIndex } = router.query
+  const { id } = router.query
   return (
     <section className='classes'>
       <div id='fb-root'></div>
@@ -98,7 +98,7 @@ const Classes = props => {
         <div className='fbComments'>
           <div
             className='fb-comments'
-            data-href={`https://semanadacaligrafia.com.br/aulas/${videoIndex}`}
+            data-href={`https://semanadacaligrafia.com.br/aulas/${id}`}
             data-width='100%'
             data-numposts='20'
           ></div>
