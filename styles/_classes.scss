@@ -240,6 +240,8 @@
 .fbComments{
   clear: both;
   @include grid-column(12);
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   @include grid-media($grid-lg){
     @include grid-column(10);
