@@ -71,16 +71,7 @@ const Classes = props => {
             <IoLogoFacebook />
             Comunidade no Facebook
           </a>
-          {/* <a
-            href='https://bit.ly/semana-da-caligrafia-wa'
-            className='link-zap'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <ImWhatsapp />
-            Convidar amigos
-          </a> */}
-          <a href='/historias' className='link-testimonials'>
+          <a href='/historias' target='_blank' className='link-testimonials'>
             <FiPenTool />
             Histórias de alunos
           </a>
