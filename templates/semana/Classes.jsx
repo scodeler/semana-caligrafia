@@ -15,7 +15,7 @@ const Classes = props => {
         async
         defer
         crossOrigin='anonymous'
-        src='https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0&appId=118451698259367&autoLogAppEvents=1'
+        src='https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0&appId=1692825070886078&autoLogAppEvents=1'
         nonce='tkACXMq6'
       ></script>
       <div className='videos'>
