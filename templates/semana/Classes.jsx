@@ -15,9 +15,9 @@ const Classes = props => {
         async
         defer
         crossOrigin='anonymous'
-        src='https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0&appId=1692825070886078&autoLogAppEvents=1'
-        nonce='tkACXMq6'
-      />
+        src='https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0&appId=118451698259367&autoLogAppEvents=1'
+        nonce='3tpY9zI7'
+      ></script>
       <div className='videos'>
         <div className='classes-video'>
           <div className='classes-embed'>
@@ -100,7 +100,8 @@ const Classes = props => {
             className='fb-comments'
             data-href={`https://semanadacaligrafia.com.br/aulas/${id}`}
             data-width='100%'
-            data-numposts='10'
+            data-numposts='20'
+            data-order-by='reverse_time'
           ></div>
         </div>
       </div>
