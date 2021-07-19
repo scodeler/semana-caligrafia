@@ -192,7 +192,8 @@
   text-align: center;
 
   a{
-    margin: 0 15px;
+    margin: 0 15px 15px;
+    display: inline-table;
   }
 }
 
@@ -228,5 +229,20 @@
 }
 
 .link-testimonials{
-  @include button($gray, $gray)
+  @include button($lightBlue, $lightBlue);
+  color: $darkGray;
+}
+
+.link-zap{
+  @include button($green, $lightGreen);
+}
+
+.fbComments{
+  clear: both;
+  @include grid-column(12);
+
+  @include grid-media($grid-lg){
+    @include grid-column(10);
+    @include grid-push(2)
+  }
 }

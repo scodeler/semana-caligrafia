@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router'
-import { FiLock } from 'react-icons/fi'
+import { FiLock, FiPenTool } from 'react-icons/fi'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import { IoLogoFacebook } from 'react-icons/io'
+import { ImWhatsapp } from 'react-icons/im'
 import classes from '../../classes'
 
 const Classes = props => {
   const router = useRouter()
-  const videoIndex = router.query
+  const { videoIndex } = router.query
   return (
     <section className='classes'>
       <div id='fb-root'></div>
@@ -78,9 +79,19 @@ const Classes = props => {
             rel='noopener noreferrer'
           >
             <IoLogoFacebook />
-            Acessar comunidade no Facebook
+            Comunidade no Facebook
           </a>
+          {/* <a
+            href='https://bit.ly/semana-da-caligrafia-wa'
+            className='link-zap'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <ImWhatsapp />
+            Convidar amigos
+          </a> */}
           <a href='/historias' className='link-testimonials'>
+            <FiPenTool />
             Histórias de alunos
           </a>
         </div>
