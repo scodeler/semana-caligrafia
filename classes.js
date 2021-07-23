@@ -22,9 +22,9 @@ const classes = [
     label: 'Aula 3',
     type: 'class',
     date: 'SEX - 23/07',
-    videoId: 'soVmlWRDFM0',
+    videoId: 'yyB-z69wEqQ',
     title: 'Transformando letras em arte',
-    locked: true,
+    locked: false,
   },
 ]
 
