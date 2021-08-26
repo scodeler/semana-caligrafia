@@ -1,4 +1,4 @@
-import Semana from '../templates/semana'
+import Semana from '../../templates/semana'
 
 const HomeGO = () => {
   return <Semana mediaPrefix='go' />

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import Footer from '../templates/semana/parts/Footer'
-import testimonials from '../testimonials'
+import Footer from '../../templates/semana/parts/Footer'
+import testimonials from '../../testimonials'
 
 const Historias = () => {
   return (
