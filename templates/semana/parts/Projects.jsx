@@ -17,7 +17,7 @@ const Projects = () => {
       <div className='container'>
         <div className='projects-wrapper'>
           <ul className='projects-list'>
-            {images.map((img) => (
+            {images.map(img => (
               <li className='projects-image' key={img.id}>
                 <Image src={`/projects/${img.file}`} width={350} height={350} />
               </li>

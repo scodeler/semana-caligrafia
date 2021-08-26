@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 const HomeRedirect = () => {
   const router = useRouter()
   useEffect(() => {
-    router.push(`/inscricao`)
+    router.push('/inscricao')
   }, [])
 
   return <>...</>
