@@ -38,12 +38,12 @@ const SubscribeForm = props => {
   const handleFormSubmit = async event => {
     event.preventDefault()
     setLoading(true)
-    const url = 'https://auth.tipocali.com.br/signup'
+    const url = '/api/subscribe'
     try {
       const response = await axios.post(url, {
         name: name,
         email: email,
-        tag: 'PL L3',
+        tag: 'PL L4',
       })
       if (response.status === 200) {
         localStorage.setItem('SemanaCaligrafia_L3', response.data.email)
@@ -80,7 +80,9 @@ const SubscribeForm = props => {
       />
       <span className='subscribeForm-disclaimer'>
         <HiCheckCircle className='subscribeForm-alert' />
-        Ao enviar este formulário você concorda em receber nossas comunicações
+        De acordo com as Leis 12/965/2014 e 13.709/2018, que regulam o uso da
+        Internet e o tratamento de dados pessoais no Brasil, ao clicar no botão,
+        você autoriza o envio notificações por e-mail ou outros meios.
       </span>
       {hasError && (
         <div className='subscribeForm-error'>

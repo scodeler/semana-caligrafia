@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
-import { FiLock, FiPenTool } from 'react-icons/fi'
+import { FiLock } from 'react-icons/fi'
+import { ImWhatsapp } from 'react-icons/im'
 import { AiFillPlayCircle } from 'react-icons/ai'
-import { IoLogoFacebook } from 'react-icons/io'
 import classes from '../../classes'
 
 const Classes = props => {
@@ -63,17 +63,13 @@ const Classes = props => {
         </nav>
         <div className='classes-bottom'>
           <a
-            className='facebook-button'
-            href='https://www.facebook.com/groups/semanadacaligrafia'
+            href='https://chat.whatsapp.com/EtNn7i2sR4ZHFYa1FbWAoA'
             target='_blank'
-            rel='noopener noreferrer'
+            className='link-whatsapp'
+            rel='noreferrer'
           >
-            <IoLogoFacebook />
-            Comunidade no Facebook
-          </a>
-          <a href='/historias' target='_blank' className='link-testimonials'>
-            <FiPenTool />
-            Histórias de alunos
+            <ImWhatsapp />
+            Entrar no Grupo VIP
           </a>
         </div>
       </div>

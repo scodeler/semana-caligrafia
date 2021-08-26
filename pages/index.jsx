@@ -1,7 +1,13 @@
-import Semana from '../templates/semana'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
-const Home = () => {
-  return <Semana />
+const HomeRedirect = () => {
+  const router = useRouter()
+  useEffect(() => {
+    router.push(`/inscricao`)
+  }, [])
+
+  return <>...</>
 }
 
-export default Home
+export default HomeRedirect

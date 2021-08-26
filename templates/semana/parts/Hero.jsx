@@ -16,23 +16,18 @@ const Hero = props => {
             />
           </h1>
           <h2 className='hero-title'>
-            Você vai transformar sua letra em arte em apenas 7 dias
+            Escreva como um artista e fature com suas letras
           </h2>
           <div className='hero-text'>
             <p>
-              Vou te contar o passo a passo, letra por letra, o caminho para
-              você deixar de ser só um espectador e entrar no mundo mágico das
-              letras de uma vez,{' '}
-              <strong className='red'>
-                mesmo que não tenha conhecimento do assunto ou se sinta seguro
-              </strong>
-              .
+              Vou te ensinar, do absoluto zero, como você pode transformar sua
+              letra comum em uma arte de valor.
             </p>
           </div>
           <ul className='hero-topics'>
             <li className='hero-topic'>
               <FiCalendar className='hero-topicIcon' />
-              19 a 24 de julho
+              13 a 19 de Setembro
             </li>
             <li className='hero-topic'>
               <FiPenTool className='hero-topicIcon' />

@@ -6,7 +6,7 @@ const classes = [
     date: 'SEG - 19/07',
     videoId: 'bOxWmi-43GI',
     title: 'Oportunidades da Caligrafia',
-    locked: false,
+    locked: true,
   },
   {
     index: 2,
@@ -15,7 +15,7 @@ const classes = [
     date: 'QUA - 21/07',
     videoId: 'AxAMtgFXQ-s',
     title: '5 Passos para começar na Caligrafia',
-    locked: false,
+    locked: true,
   },
   {
     index: 3,
@@ -23,8 +23,8 @@ const classes = [
     type: 'class',
     date: 'SEX - 23/07',
     videoId: 'yyB-z69wEqQ',
-    title: 'Transformando letras em arte',
-    locked: false,
+    title: 'Transformando letras em arte!',
+    locked: true,
   },
 ]
 

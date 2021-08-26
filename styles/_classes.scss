@@ -46,24 +46,24 @@
   @include grid-column(10);
   @include grid-push(1);
 
-  @include grid-media($grid-sm){
+  @include grid-media($grid-sm) {
     @include grid-column(8);
     @include grid-push(0);
   }
 
-  @include grid-media($grid-lg){
+  @include grid-media($grid-lg) {
     @include grid-column(14);
     @include grid-push(0);
   }
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs) {
     @include grid-column(4);
     @include grid-push(0);
   }
 }
 
-.videos{
-  @include grid-media($grid-lg){
+.videos {
+  @include grid-media($grid-lg) {
     @include grid-collapse;
     @include grid-container;
   }
@@ -71,7 +71,7 @@
 
 .classes-video {
   margin-bottom: 30px;
-  @include grid-media($grid-lg){
+  @include grid-media($grid-lg) {
     @include grid-column(8);
   }
 }
@@ -91,8 +91,8 @@
   }
 }
 
-.classesMenu{
-  @include grid-media($grid-lg){
+.classesMenu {
+  @include grid-media($grid-lg) {
     @include grid-column(6);
     background: $lightPink;
     border-radius: 20px;
@@ -115,9 +115,9 @@
   border-radius: 20px;
   box-shadow: 0 0 20px rgba($black, 0.1);
 
-  @include grid-media($grid-lg){
+  @include grid-media($grid-lg) {
     box-shadow: none;
-    border-bottom: solid 1px rgba($gray, .5);
+    border-bottom: solid 1px rgba($gray, 0.5);
     margin-bottom: 0;
     border-radius: 0;
   }
@@ -147,7 +147,7 @@
 
 .classItem-text {
   flex: 1;
-  @include grid-media($grid-lg){
+  @include grid-media($grid-lg) {
     width: 100%;
   }
 }
@@ -191,7 +191,7 @@
   clear: both;
   text-align: center;
 
-  a{
+  a {
     margin: 0 15px 15px;
     display: inline-table;
   }
@@ -201,14 +201,14 @@
   text-align: center;
 }
 
-.classItem-watch{
+.classItem-watch {
   color: $gray;
   opacity: 0.6;
   border-radius: 50%;
   font-size: 2em;
   display: block;
 
-  & > svg{
+  & > svg {
     display: block;
   }
 }
@@ -219,7 +219,7 @@
   font-size: 2em;
   display: block;
 
-  & > svg{
+  & > svg {
     display: block;
   }
 }
@@ -228,23 +228,27 @@
   @include button(#15a3fa, #0267e2);
 }
 
-.link-testimonials{
+.link-testimonials {
   @include button($lightBlue, $lightBlue);
   color: $darkGray;
 }
 
-.link-zap{
+.link-whatsapp {
   @include button($green, $lightGreen);
 }
 
-.fbComments{
+.link-zap {
+  @include button($green, $lightGreen);
+}
+
+.fbComments {
   clear: both;
   @include grid-column(12);
   margin-top: 30px;
   margin-bottom: 30px;
 
-  @include grid-media($grid-lg){
+  @include grid-media($grid-lg) {
     @include grid-column(10);
-    @include grid-push(2)
+    @include grid-push(2);
   }
 }
