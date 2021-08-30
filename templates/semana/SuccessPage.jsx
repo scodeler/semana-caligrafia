@@ -71,7 +71,7 @@ const SuccessPageEM = () => {
             </div>
             <div className='step-buttons'>
               <a
-                href='https://www.facebook.com/groups/semanadacaligrafia'
+                href='https://www.facebook.com/groups/semanadacaligrafia2'
                 target='_blank'
                 className='step-button button-fb'
                 rel='noreferrer'
