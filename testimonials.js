@@ -14,6 +14,13 @@ const testimonials = [
       'A caligrafia me trouxe um gosto de viver que eu estava perdendo, isso me revigorou, me deu um gás.',
   },
   {
+    id: 10,
+    videoId: 'RMQyH77H8Bg',
+    title: 'Leticia - Iconha-ES',
+    excerpt:
+      'Foi a realização de um sonho. Se eu queria viver da minha arte, me realizou tanto pessoal quanto profissionalmente',
+  },
+  {
     id: 2,
     videoId: 'BU0MKq19XGs',
     title: 'Carol, Piracicaba-SP',
@@ -21,11 +28,25 @@ const testimonials = [
       'Eu escrevi cartas para a minha sobrinha que eu não via desde o Natal.',
   },
   {
+    id: 9,
+    videoId: 'gAODqPTn3CM',
+    title: 'Georgia, Curitiba-PR',
+    excerpt:
+      'Hoje posso viver da minha arte. Nunca achei que fosse acordar pra trabalhar tão feliz quanto eu acordo hoje em dia.',
+  },
+  {
     id: 3,
     videoId: '10eYW9R1Z-o',
     title: 'Ir. Maria Angélica, Palmas-TO',
     excerpt:
       'Às vezes eu não consigo nem dormir de tantos pedidos que vem. Eu me sinto realizada na Escola de Caligrafia.',
+  },
+  {
+    id: 11,
+    videoId: 'F0-swsJD4Es',
+    title: 'Hercilia, Salto de Pirapora-SP',
+    excerpt:
+      'Eu tinha medo de mostrar meus trabalhos, e hoje eu superei. Abri até um instagram!',
   },
   {
     id: 4,
@@ -47,6 +68,13 @@ const testimonials = [
     title: 'Renato, Nova Friburgo-RJ',
     excerpt:
       'Uma coisa que me dá muito prazer é saber que a pessoa tem um item de decoração feito por mim na casa dela.',
+  },
+  {
+    id: 12,
+    videoId: 'BcBCMkouilE',
+    title: 'Cristina, Cotia-SP',
+    excerpt:
+      'Eu ia ter que passar por terapia psiquiátrica. Hoje falam que até a minha pele está melhor. E foi a caligrafia.',
   },
   {
     id: 7,
