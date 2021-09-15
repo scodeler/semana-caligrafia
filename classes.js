@@ -14,7 +14,7 @@ const classes = [
     type: 'class',
     date: 'QUA - 15/09',
     videoId: 'fELAx7eCsIg',
-    title: '5 Passos para começar na Caligrafia',
+    title: '5 Passos para começar na caligrafia',
     locked: false,
   },
   {
