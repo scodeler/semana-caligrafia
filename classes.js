@@ -22,8 +22,8 @@ const classes = [
     label: 'Aula 3',
     type: 'class',
     date: 'SEX - 17/09',
-    videoId: 'yyB-z69wEqQ',
-    title: 'Transformando letras em arte!',
+    videoId: 'ZBd9iPO9PqU',
+    title: 'Sua primeira Obra de Arte',
     locked: true,
   },
 ]
