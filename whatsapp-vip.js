@@ -1,2 +1,2 @@
-const whatsappVipLink = 'https://chat.whatsapp.com/EtNn7i2sR4ZHFYa1FbWAoA'
+const whatsappVipLink = 'https://chat.whatsapp.com/LaZqULJuFd9EUv0yuby6bm'
 export default whatsappVipLink

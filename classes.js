@@ -22,9 +22,9 @@ const classes = [
     label: 'Aula 3',
     type: 'class',
     date: 'SEX - 17/09',
-    videoId: 'ZBd9iPO9PqU',
+    videoId: 'B4a27JK3bLM',
     title: 'Sua primeira Obra de Arte',
-    locked: true,
+    locked: false,
   },
 ]
 
