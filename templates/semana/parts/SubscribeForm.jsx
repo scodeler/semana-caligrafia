@@ -56,23 +56,27 @@ const SubscribeForm = props => {
     } catch (error) {
       setError(true)
       setLoading(false)
-      console.log(error)
+      console.log(error, valid)
     }
   }
 
   return (
     <form className='subscribeForm' onSubmit={handleFormSubmit}>
-      <h3 className='subscribeForm-title'>Inscrição Gratuita</h3>
+      <h3 className='subscribeForm-title'>Evento Encerrado</h3>
       <TextInput
+        disabled
         label='Nome'
         name='userName'
         onChange={handleName}
         value={name}
+        style={{ cursor: 'no-drop' }}
         placeholder='Como quer ser chamada(o)?'
       />
       <TextInput
+        disabled
         label='Email'
         name='userEmail'
+        style={{ cursor: 'no-drop' }}
         value={email}
         onChange={handleEmail}
         placeholder='Qual o seu melhor email?'
@@ -90,7 +94,7 @@ const SubscribeForm = props => {
         </div>
       )}
       <button
-        disabled={!valid}
+        disabled={true}
         type='submit'
         className={`submitBtn green ${loading && 'loading'}`}
       >

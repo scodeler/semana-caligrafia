@@ -5,8 +5,14 @@ import Professor from './parts/Professor'
 import Projects from './parts/Projects'
 import FormBottom from './parts/FormBottom'
 import Footer from './parts/Footer'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 const Semana = props => {
+  const router = useRouter()
+  useEffect(() => {
+    router.push('http://escoladecaligrafia.com')
+  }, [])
   return (
     <>
       <Head>
