@@ -6,7 +6,7 @@ const classes = [
     date: 'SEG - 13/09',
     videoId: 'hesg3f2O4-0',
     title: 'Oportunidades da Caligrafia',
-    locked: false,
+    locked: true,
   },
   {
     index: 2,
@@ -15,7 +15,7 @@ const classes = [
     date: 'QUA - 15/09',
     videoId: 'fELAx7eCsIg',
     title: '5 Passos para começar na caligrafia',
-    locked: false,
+    locked: true,
   },
   {
     index: 3,
@@ -24,7 +24,7 @@ const classes = [
     date: 'SEX - 17/09',
     videoId: 'B4a27JK3bLM',
     title: 'Sua primeira Obra de Arte',
-    locked: false,
+    locked: true,
   },
 ]
 
