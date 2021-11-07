@@ -8,6 +8,11 @@ const Profile = () => {
           </h2>
           <ul className='profile-list'>
             <li className='profileTop'>
+              <strong>Tempo de paz e relaxamento:</strong> Caso a sua rotina
+              esteja puxada, ou mesmo sem graça, a Semana da Caligrafia irá
+              trazer cor e luz para os seus dias
+            </li>
+            <li className='profileTop'>
               <strong>Começando do zero:</strong> Se você não sabe por onde
               começar na caligrafia ou está no início e deseja aprender uma nova
               atividade artística prazerosa e até lucrativa, essa semana é pra
@@ -17,11 +22,6 @@ const Profile = () => {
               <strong>Apaixonados por arte:</strong> Você ama atividades
               manuais, adora escrever de maneira bonita mas se sente
               despreparada(o) ou insegura(o), essa semana é para você
-            </li>
-            <li className='profileTop'>
-              <strong>Tempo de paz e relaxamento:</strong> Caso a sua rotina
-              esteja puxada, ou mesmo sem graça, a Semana da Caligrafia irá
-              trazer cor e luz para os seus dias
             </li>
           </ul>
         </div>

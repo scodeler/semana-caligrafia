@@ -35,7 +35,7 @@ export default async (
     const addedTag = await api.post(`${mailerUrl}/contactTags`, {
       "contactTag": {
         "contact": searchContact.data.contacts[0].id,
-        "tag": 33
+        "tag": 61
       }
     })
     return response.json(addedTag.data)

@@ -5,14 +5,9 @@ import Professor from './parts/Professor'
 import Projects from './parts/Projects'
 import FormBottom from './parts/FormBottom'
 import Footer from './parts/Footer'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import Subjects from './parts/Subjects'
 
 const Semana = props => {
-  const router = useRouter()
-  useEffect(() => {
-    router.push('http://escoladecaligrafia.com')
-  }, [])
   return (
     <>
       <Head>
@@ -21,6 +16,7 @@ const Semana = props => {
       <Hero mediaPrefix={props.mediaPrefix} />
       <Profile />
       <Professor />
+      <Subjects />
       <Projects />
       <FormBottom mediaPrefix={props.mediaPrefix} />
       <Footer />

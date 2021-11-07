@@ -26,7 +26,7 @@ $lineColor: rgba(106,187,222,.25);
 }
 
 .hero-left{
-  @include grid-column(6);
+  @include grid-column(5);
   @include grid-push(1);
   padding: 60px 0;
 
@@ -59,26 +59,8 @@ $lineColor: rgba(106,187,222,.25);
 
 .hero-title{
   font: $bold 1.6em $font;
-  color: $green;
-  background: #fff;
-  padding: 30px;
-  margin-left: -30px;
-  text-transform: uppercase;
+  color: $red;
   position: relative;
-  box-shadow: 0 10px 10px rgba(0,0,0,.16);
-  margin-right: 20%;
-  text-align: center;
-
-  &::after,
-  &::before{
-    content: '';
-    background: $lightBlue;
-    width: 65px;
-    height: 22px;
-    position: absolute;
-    display: block;
-    top: -11px;
-  }
 
   @include grid-media($grid-xs, $grid-sm){
     margin: 0 0 30px;
@@ -94,7 +76,6 @@ $lineColor: rgba(106,187,222,.25);
 .hero-text{
   @include paragraph;
   margin-bottom: 30px;
-  margin-right: 20%;
   
   @include grid-media($grid-xs, $grid-sm){
     margin-right: 0;
@@ -109,7 +90,7 @@ $lineColor: rgba(106,187,222,.25);
 }
 
 .hero-topicIcon{
-  color: $green;
+  color: $red;
   margin-right: 10px;
   width: 20px;
   height: 20px;
@@ -118,7 +99,6 @@ $lineColor: rgba(106,187,222,.25);
 
 .hero-topic{
   list-style: none;
-  width: 50%;
   margin-bottom: 10px;
   font: $bold 0.9em $font;
   color: $black;
@@ -131,7 +111,7 @@ $lineColor: rgba(106,187,222,.25);
 }
 
 .hero-form{
-  @include grid-column(4);
+  @include grid-column(5);
   background: #fff;
   box-shadow: 0 0 10px rgba(#000,.1);
   
@@ -161,5 +141,5 @@ $lineColor: rgba(106,187,222,.25);
   margin: 0 0 20px;
   font: $bold 1.5em $font;
   text-align: center;
-  color: $green;
+  color: $darkGreen;
 }

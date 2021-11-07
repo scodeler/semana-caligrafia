@@ -43,7 +43,7 @@ const SubscribeForm = props => {
       const response = await axios.post(url, {
         name: name,
         email: email,
-        tag: 'PL L4',
+        tag: 'PL L5',
       })
       if (response.status === 200) {
         localStorage.setItem('SemanaCaligrafia_L3', response.data.email)
@@ -62,39 +62,29 @@ const SubscribeForm = props => {
 
   return (
     <form className='subscribeForm' onSubmit={handleFormSubmit}>
-      <h3 className='subscribeForm-title'>Evento Encerrado</h3>
+      <h3 className='subscribeForm-title'>Inscrições Gratuitas</h3>
       <TextInput
-        disabled
         label='Nome'
         name='userName'
         onChange={handleName}
         value={name}
-        style={{ cursor: 'no-drop' }}
         placeholder='Como quer ser chamada(o)?'
       />
       <TextInput
-        disabled
         label='Email'
         name='userEmail'
-        style={{ cursor: 'no-drop' }}
         value={email}
         onChange={handleEmail}
         placeholder='Qual o seu melhor email?'
         type='email'
       />
-      <span className='subscribeForm-disclaimer'>
-        <HiCheckCircle className='subscribeForm-alert' />
-        De acordo com as Leis 12/965/2014 e 13.709/2018, que regulam o uso da
-        Internet e o tratamento de dados pessoais no Brasil, ao clicar no botão,
-        você autoriza o envio notificações por e-mail ou outros meios.
-      </span>
       {hasError && (
         <div className='subscribeForm-error'>
           Ocorreu um erro. Tente usar outro email
         </div>
       )}
       <button
-        disabled={true}
+        disabled={!valid}
         type='submit'
         className={`submitBtn green ${loading && 'loading'}`}
       >
@@ -110,6 +100,12 @@ const SubscribeForm = props => {
           Somos contra todo tipo de spam
         </div>
       </div>
+      <span className='subscribeForm-disclaimer'>
+        <HiCheckCircle className='subscribeForm-alert' />
+        De acordo com a lei 12.965/2014 e 13.709/2018, autorizo o envio de
+        comunicações por e-mail ou qualquer outro meio e concordo com a sua
+        política de privacidade.
+      </span>
     </form>
   )
 }

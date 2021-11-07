@@ -10,13 +10,15 @@ const Hero = props => {
           <h1 className='logo'>
             <Image
               src='/logo.png'
-              width='430'
-              height='200'
+              width='500'
+              height='93'
               layout='responsive'
             />
           </h1>
           <h2 className='hero-title'>
-            Escreva como um artista e fature com suas letras
+            Sinta-se <span className='red'>realizada</span> através da
+            caligrafia e tenha uma{' '}
+            <span className='red'>válvula de escape</span> no seu dia a dia
           </h2>
           <div className='hero-text'>
             <p>
