@@ -104,10 +104,7 @@ $lineColor: rgba(106,187,222,.25);
   color: $black;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
-  @include grid-media($grid-xs, $grid-sm){
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .hero-form{

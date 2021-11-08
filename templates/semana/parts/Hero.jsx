@@ -22,8 +22,10 @@ const Hero = props => {
           </h2>
           <div className='hero-text'>
             <p>
-              Vou te ensinar, do absoluto zero, como você pode transformar sua
-              letra comum em uma arte de valor.
+              Encontre na caligrafia uma atividade deliciosa, que vai mandar
+              embora toda aquela angústia e o peso das tarefas do dia a dia,
+              aprenda de criar coisas belas, e quem sabe até gerar uma renda
+              extra no futuro.
             </p>
           </div>
           <ul className='hero-topics'>

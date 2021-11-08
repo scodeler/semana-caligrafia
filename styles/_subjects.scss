@@ -2,3 +2,70 @@
   padding: 60px 0;
   background: $veryLightGreen;
 }
+
+.subjects-title{
+  font: $bold 2em $font;
+  color: $darkGreen;
+  text-align: center;
+  @include grid-column(12);
+}
+
+.subjects-list{
+  @include grid-column(8);
+  @include grid-push(2);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subjects-item{
+  display: flex;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+$calendar-radius: 8px;
+
+.subject-calendar{
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 40px;
+  border-radius: $calendar-radius;
+  box-shadow: 0 0 15px rgba($darkGray, .3);
+}
+
+.subject-month{
+  font: $bold 0.9em $font;
+  color: $white;
+  background: $red;
+  text-transform: uppercase;
+  padding: 5px;
+  border-top-left-radius: $calendar-radius;
+  border-top-right-radius: $calendar-radius;
+}
+
+.subject-day{
+  border-bottom-left-radius: $calendar-radius;
+  border-bottom-right-radius: $calendar-radius;
+  font: $bold 2em $font;
+  flex: 1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $darkGray;
+}
+.subject-content{
+  flex: 1;
+}
+
+.subject-title{
+  font: $bold 1em $font;
+  text-transform: uppercase;
+  color: $red;
+  margin: 0 0 20px;
+}
+

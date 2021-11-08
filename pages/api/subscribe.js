@@ -44,7 +44,7 @@ export default async (
     const addedTag = await api.post(`${mailerUrl}/contactTags`, {
       "contactTag": {
         "contact": addedContact.data.contact.id,
-        "tag": 33
+        "tag": 61
       }
     })
     return response.json(addedContact.data)
