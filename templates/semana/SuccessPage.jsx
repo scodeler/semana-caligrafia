@@ -14,7 +14,12 @@ const SuccessPageEM = () => {
       </Head>
       <div className='container'>
         <h1 className='success-logo'>
-          <Image src='/logo.png' width='430' height='200' layout='responsive' />
+          <Image
+            src='/Logo-LetrasComAlma-negativo.png'
+            width='500'
+            height='93'
+            layout='responsive'
+          />
         </h1>
         <div className='success-message'>
           <p>Parabéns pela iniciativa de se inscrever nesta jornada!</p>
@@ -25,9 +30,9 @@ const SuccessPageEM = () => {
             <h3 className='step-title'>1. Confirme seu e-mail</h3>
             <div className='step-text'>
               <p>
-                Enviamos pra você um e-mail de confirmação (pode ser que demore
-                uns minutos pra chegar). Lá você vai encontrar orientações
-                importantes para nosso Workshop.
+                Te enviei o primeiro material que você vai precisar para a
+                Semana da Caligrafia. Confere na sua caixa de entrada e leia com
+                atenção as instruções.
               </p>
               <p>
                 É importante que você me RESPONDA no e-mail qual é sua maior
@@ -71,7 +76,7 @@ const SuccessPageEM = () => {
             </div>
             <div className='step-buttons'>
               <a
-                href='https://www.facebook.com/groups/semanadacaligrafia2'
+                href='https://www.facebook.com/groups/semamadacaligrafia.letrascomalma/'
                 target='_blank'
                 className='step-button button-fb'
                 rel='noreferrer'

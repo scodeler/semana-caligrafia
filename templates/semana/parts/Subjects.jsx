@@ -16,7 +16,7 @@ const Subjects = () => {
                 </h3>
                 <div className='subject-text'>
                   <p>
-                    Entenda como a caligrafia pode ser uma excelente
+                    Entenda como a caligrafia pode ser uma excelente{' '}
                     <strong>oportunidade</strong> para você ter um{' '}
                     <strong>momento de paz</strong>, praticando uma atividade
                     repleta de <strong>propósito e significado</strong>, podendo

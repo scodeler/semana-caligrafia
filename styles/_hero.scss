@@ -8,7 +8,7 @@ $lineColor: rgba(106,187,222,.25);
 
   &::after{
     content: '';
-    display: block;
+    display: none;
     top: 0;
     left: 10px;
     height: 100%;
@@ -16,7 +16,12 @@ $lineColor: rgba(106,187,222,.25);
     position: absolute;
     background-image: radial-gradient($lightGray, $lightGray 5px, rgba(#000,.1) 10px, transparent 10px);
     background-size: 40px 40px;
+
+    @include grid-media($grid-lg){
+      display: block;
+    }
   }
+  
 
   @include grid-media($grid-xs, $grid-sm){
     &::after{
@@ -26,8 +31,7 @@ $lineColor: rgba(106,187,222,.25);
 }
 
 .hero-left{
-  @include grid-column(5);
-  @include grid-push(1);
+  @include grid-column(6);
   padding: 60px 0;
 
   @include grid-media($grid-xs){
@@ -36,9 +40,14 @@ $lineColor: rgba(106,187,222,.25);
     text-align: center;
   }
 
+  @include grid-media($grid-lg){
+    @include grid-column(7);
+    padding-left: 40px;
+  }
+
   @include grid-media($grid-xl){
-    @include grid-column(6);
-    @include grid-push(2);
+    @include grid-column(7);
+    @include grid-push(1);
   }
 
   @include grid-media($grid-sm){
@@ -108,7 +117,7 @@ $lineColor: rgba(106,187,222,.25);
 }
 
 .hero-form{
-  @include grid-column(5);
+  @include grid-column(6);
   background: #fff;
   box-shadow: 0 0 10px rgba(#000,.1);
   
@@ -118,7 +127,7 @@ $lineColor: rgba(106,187,222,.25);
   }
 
   @include grid-media($grid-xl){
-    @include grid-column(4);
+    @include grid-column(5);
     @include grid-push(0);
   }
   
