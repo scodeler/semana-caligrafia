@@ -17,6 +17,11 @@
   margin-bottom: 0;
   padding: 0;
 
+  @include grid-media($grid-xl){
+    @include grid-column(6);
+    @include grid-push(4);
+  }
+
   @include grid-media($grid-sm){
     @include grid-column(8);
     @include grid-push(0);
