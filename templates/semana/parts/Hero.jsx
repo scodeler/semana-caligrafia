@@ -31,7 +31,7 @@ const Hero = props => {
           <ul className='hero-topics'>
             <li className='hero-topic'>
               <FiCalendar className='hero-topicIcon' />
-              13 a 19 de Setembro
+              29/nov a 05/dez
             </li>
             <li className='hero-topic'>
               <FiPenTool className='hero-topicIcon' />
