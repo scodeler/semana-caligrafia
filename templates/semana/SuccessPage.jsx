@@ -16,8 +16,8 @@ const SuccessPageEM = () => {
         <h1 className='success-logo'>
           <Image
             src='/Logo-LetrasComAlma-negativo.png'
-            width='500'
-            height='93'
+            width='482'
+            height='255'
             layout='responsive'
           />
         </h1>

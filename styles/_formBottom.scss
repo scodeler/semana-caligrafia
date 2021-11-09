@@ -1,12 +1,20 @@
 .formBottom{
-  background: url(/bg-folhas.png) $black center no-repeat;
+  background: $black;
   padding: 80px 0;
   background-size: 80% auto;
+
+  & > .container{
+    background: url(/bg-folhas.png) center no-repeat;
+  }
 
   @include grid-media($grid-xs){
     padding: 30px 0;
     background: $black;
   }
+}
+
+.formBottom-top{
+  @include grid-container;
 }
 
 .formBottom-box{
@@ -24,5 +32,17 @@
     @include grid-column(4);
     @include grid-push(0);
     padding: 20px;
+  }
+}
+.formBottom-date{
+  @include grid-column(12);
+  margin-bottom: 40px;
+  text-align: center;
+
+  p{
+    color: $lightGreen;
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 }

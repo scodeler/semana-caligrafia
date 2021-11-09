@@ -10,8 +10,8 @@ const Hero = props => {
           <h1 className='logo'>
             <Image
               src='/logo.png'
-              width='500'
-              height='93'
+              width='482'
+              height='255'
               layout='responsive'
             />
           </h1>
@@ -24,7 +24,7 @@ const Hero = props => {
             <p>
               Encontre na caligrafia uma atividade deliciosa, que vai mandar
               embora toda aquela angústia e o peso das tarefas do dia a dia,
-              aprenda de criar coisas belas, e quem sabe até gerar uma renda
+              aprenda a criar coisas belas, e quem sabe até gerar uma renda
               extra no futuro.
             </p>
           </div>
