@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps }) => {
           property='og:description'
           content='Transforme suas letras em arte neste evento 100% online e gratuito'
         />
-        <meta property='og:image' content='/sharing-image.png' />
+        <meta property='og:image' content='/sharing-image.jpg' />
         <meta property='og:image:type' content='image/png' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='627' />
