@@ -1,2 +1,2 @@
-const whatsappLink = 'https://chat.whatsapp.com/FQaee8uwsJKFgNS7X5S4eT'
+const whatsappLink = 'https://chat.whatsapp.com/IwY5we6wRCEBtX2nWYWZFB'
 export default whatsappLink
