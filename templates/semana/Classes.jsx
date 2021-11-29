@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { FiLock } from 'react-icons/fi'
-import { ImWhatsapp } from 'react-icons/im'
+import { IoLogoFacebook } from 'react-icons/io'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import classes from '../../classes'
 
@@ -63,13 +63,13 @@ const Classes = props => {
         </nav>
         <div className='classes-bottom'>
           <a
-            className='link-whatsapp'
-            href='/whatsapp-vip'
+            className='facebook-button'
+            href='https://www.facebook.com/groups/semanadacaligrafia.letrascomalma'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <ImWhatsapp />
-            Entrar no Grupo VIP
+            <IoLogoFacebook />
+            Entrar na comunidade
           </a>
         </div>
       </div>

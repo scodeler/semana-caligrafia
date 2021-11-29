@@ -4,17 +4,12 @@ import Image from 'next/image'
 import Classes from '../../templates/semana/Classes'
 import classes from '../../classes'
 import Footer from '../../templates/semana/parts/Footer'
-import { useEffect } from 'react'
 
 const Aula = () => {
   const router = useRouter()
   const { id, src } = router.query
 
   const currentClass = classes.filter(item => item.index === parseFloat(id))
-
-  useEffect(() => {
-    router.push('http://escoladecaligrafia.com')
-  }, [])
 
   return (
     <>
