@@ -62,12 +62,13 @@ const SubscribeForm = props => {
 
   return (
     <form className='subscribeForm' onSubmit={handleFormSubmit}>
-      <h3 className='subscribeForm-title'>Inscrições Gratuitas</h3>
+      <h3 className='subscribeForm-title'>Inscrições encerradas</h3>
       <TextInput
         label='Nome'
         name='userName'
         onChange={handleName}
         value={name}
+        disabled
         placeholder='Como quer ser chamada(o)?'
       />
       <TextInput
@@ -75,6 +76,7 @@ const SubscribeForm = props => {
         name='userEmail'
         value={email}
         onChange={handleEmail}
+        disabled
         placeholder='Qual o seu melhor email?'
         type='email'
       />
@@ -84,11 +86,11 @@ const SubscribeForm = props => {
         </div>
       )}
       <button
-        disabled={!valid}
+        disabled={true}
         type='submit'
-        className={`submitBtn green ${loading && 'loading'}`}
+        className={`submitBtn ${loading && 'loading'}`}
       >
-        Garantir minha vaga
+        Evento encerrado
       </button>
       <div className='subscribeForm-safety'>
         <div className='subscribeForm-safetyItem'>
