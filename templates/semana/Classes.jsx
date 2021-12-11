@@ -3,9 +3,13 @@ import { FiLock } from 'react-icons/fi'
 import { ImWhatsapp } from 'react-icons/im'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import classes from '../../classes'
+import { useEffect } from 'react'
 
 const Classes = props => {
   const router = useRouter()
+  useEffect(() => {
+    router.push('/inscricao')
+  }, [])
   return (
     <section className='classes'>
       <div className='videos'>
