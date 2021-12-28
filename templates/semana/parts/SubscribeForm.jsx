@@ -43,7 +43,7 @@ const SubscribeForm = props => {
       const response = await axios.post(url, {
         name: name,
         email: email,
-        tag: 'PL L5',
+        tag: router.query.public,
       })
       if (response.status === 200) {
         localStorage.setItem('SemanaCaligrafia_L3', response.data.email)
@@ -68,7 +68,6 @@ const SubscribeForm = props => {
         name='userName'
         onChange={handleName}
         value={name}
-        disabled
         placeholder='Como quer ser chamada(o)?'
       />
       <TextInput
@@ -76,7 +75,6 @@ const SubscribeForm = props => {
         name='userEmail'
         value={email}
         onChange={handleEmail}
-        disabled
         placeholder='Qual o seu melhor email?'
         type='email'
       />
@@ -86,7 +84,7 @@ const SubscribeForm = props => {
         </div>
       )}
       <button
-        disabled={true}
+        disabled={!valid}
         type='submit'
         className={`submitBtn ${loading && 'loading'}`}
       >
