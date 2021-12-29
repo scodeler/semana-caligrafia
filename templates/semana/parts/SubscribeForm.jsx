@@ -46,7 +46,7 @@ const SubscribeForm = props => {
         tag: router.query.public,
       })
       if (response.status === 200) {
-        localStorage.setItem('SemanaCaligrafia_L3', response.data.email)
+        localStorage.setItem('SemanaCaligrafia_L6', response.data.email)
       }
       if (props.mediaPrefix) {
         router.push(`/sucesso-${props.mediaPrefix}`)
