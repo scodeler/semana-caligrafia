@@ -4,7 +4,7 @@ const tags = {
   faWarm: 110,
   gaCold: 113,
   gaWarm: 112,
-  organic: 114,
+  org: 114,
 }
 
 export default tags
