@@ -39,12 +39,14 @@ export default async (
         "tag": tags.pl
       }
     })
-    const addedPublicTag = await api.post(`${mailerUrl}/contactTags`, {
-      "contactTag": {
-        "contact": searchContact.data.contacts[0].id,
-        "tag": tags[tag]
-      }
-    })
+    if(tag){
+      const addedPublicTag = await api.post(`${mailerUrl}/contactTags`, {
+        "contactTag": {
+          "contact": searchContact.data.contacts[0].id,
+          "tag": tags[tag]
+        }
+      })
+    }
     return response.json(addedTag.data)
   } else {
     const addedContact = await api.post(`${mailerUrl}/contacts`, contact)

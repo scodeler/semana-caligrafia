@@ -88,7 +88,7 @@ const SubscribeForm = props => {
         type='submit'
         className={`submitBtn ${loading && 'loading'}`}
       >
-        Evento encerrado
+        Inscreva-se grátis
       </button>
       <div className='subscribeForm-safety'>
         <div className='subscribeForm-safetyItem'>

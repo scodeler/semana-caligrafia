@@ -5,6 +5,7 @@ import { RiInstagramLine } from 'react-icons/ri'
 import { FaTelegram, FaYoutube } from 'react-icons/fa'
 import Particles from 'react-tsparticles'
 import Footer from './parts/Footer'
+import Countdown from './parts/Countdown'
 
 const SuccessPageEM = () => {
   return (
@@ -76,7 +77,7 @@ const SuccessPageEM = () => {
             </div>
             <div className='step-buttons'>
               <a
-                href='https://www.facebook.com/groups/semamadacaligrafia.letrascomalma/'
+                href='https://www.facebook.com/groups/semanadacaligrafia.letrascomalma2/'
                 target='_blank'
                 className='step-button button-fb'
                 rel='noreferrer'
@@ -125,6 +126,10 @@ const SuccessPageEM = () => {
             </div>
           </li>
         </ul>
+        <Countdown
+          date='January 31, 2022 08:00:00'
+          title='Nosso evento começa em:'
+        />
         <Footer />
       </div>
       <Particles

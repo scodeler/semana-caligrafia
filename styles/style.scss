@@ -111,6 +111,64 @@ body {
   margin-bottom: 20px;
 }
 
+.countdown{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  margin: 0 auto 80px;
+  background-image: linear-gradient(to right, $red, $orange);
+  padding: 40px;
+  border-radius: 10px;
+  clear: both;
+
+  @include grid-media($grid-sm) {
+    max-width: calc(100% - 60px);
+    margin: 0 auto -50px;
+  }
+
+  @include grid-media($grid-xs) {
+    padding: 20px;
+    border-radius: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.countdown-wrapper{
+  width: 100%;
+}
+
+.countdown-title{
+  font: $bold 1.8em $font;
+  color: $black;
+  margin-top: 9px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.countdown-node{
+  width: 25%;
+  padding: 0 15px;
+  text-align: center;
+
+  @include grid-media($grid-xs) {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+.countdown-number{
+  font: $bold 2em $font;
+  color: $white;
+}
+
+.countdown-label{
+  font: $bold 0.8em $font;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $black;
+}
+
 footer {
   padding: 60px 30px;
   background: $black;
