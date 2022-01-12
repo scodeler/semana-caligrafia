@@ -7,8 +7,8 @@ const Subjects = () => {
           <ul className='subjects-list'>
             <li className='subjects-item subject'>
               <div className='subject-calendar'>
-                <div className='subject-month'>Nov</div>
-                <div className='subject-day'>29</div>
+                <div className='subject-month'>JAN</div>
+                <div className='subject-day'>31</div>
               </div>
               <div className='subject-content'>
                 <h3 className='subject-title'>
@@ -27,8 +27,8 @@ const Subjects = () => {
             </li>
             <li className='subjects-item subject'>
               <div className='subject-calendar'>
-                <div className='subject-month'>Dez</div>
-                <div className='subject-day'>01</div>
+                <div className='subject-month'>fev</div>
+                <div className='subject-day'>02</div>
               </div>
               <div className='subject-content'>
                 <h3 className='subject-title'>Transformando letras em arte</h3>
@@ -45,8 +45,8 @@ const Subjects = () => {
             </li>
             <li className='subjects-item subject'>
               <div className='subject-calendar'>
-                <div className='subject-month'>Dez</div>
-                <div className='subject-day'>03</div>
+                <div className='subject-month'>Fev</div>
+                <div className='subject-day'>04</div>
               </div>
               <div className='subject-content'>
                 <h3 className='subject-title'>Vencendo últimos obstáculos</h3>
