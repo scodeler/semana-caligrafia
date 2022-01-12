@@ -14,7 +14,7 @@ const FormBottom = () => {
           />
         </h1>
         <div className='formBottom-date'>
-          <p>de 29/nov a 05/dez</p>
+          <p>de 31/jan a 06/fev</p>
         </div>
       </div>
       <div className='container'>
