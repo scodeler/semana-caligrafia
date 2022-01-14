@@ -1,43 +1,43 @@
-.professor{
-  padding: 80px 0;
+.professor {
+  padding: 50px 0;
   background: $lightGray;
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs) {
     padding: 30px 0;
   }
 
-  .container{
+  .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
 }
 
-.professor-picture{
+.professor-picture {
   margin: 0;
   @include grid-column(3);
   @include grid-push(2);
   border: solid 10px #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs) {
     @include grid-column(4);
     @include grid-push(0);
     margin-bottom: 30px;
   }
 
-  @include grid-media($grid-xl){
+  @include grid-media($grid-xl) {
     @include grid-column(3);
     @include grid-push(3);
   }
 
-  @include grid-media($grid-sm){
+  @include grid-media($grid-sm) {
     @include grid-column(3);
     @include grid-push(0);
   }
 
-  &::after{
+  &::after {
     content: '';
     @include imgreplace;
     position: absolute;
@@ -50,26 +50,25 @@
   }
 }
 
-.professor-content{
+.professor-content {
   @include grid-column(5);
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs) {
     @include grid-column(4);
     @include grid-push(0);
   }
 
-  @include grid-media($grid-xl){
+  @include grid-media($grid-xl) {
     @include grid-column(5);
   }
 
-  @include grid-media($grid-sm){
+  @include grid-media($grid-sm) {
     @include grid-column(5);
   }
 }
 
-.professor-title{
+.professor-title {
   font: $bold 1.6em $font;
   color: $green;
   margin: 0 0 20px;
 }
-

@@ -1,12 +1,22 @@
-$lineColor: rgba(106,187,222,.25);
+$lineColor: rgba(106, 187, 222, 0.25);
 
-.hero{
-  background-image: repeating-linear-gradient(0deg, $lineColor, $lineColor 1px, $lightGray 1px, $lightGray 20px, $lineColor 20px,$lineColor 21px, $lightGray 21px, $lightGray);
+.hero {
+  background-image: repeating-linear-gradient(
+    0deg,
+    $lineColor,
+    $lineColor 1px,
+    $lightGray 1px,
+    $lightGray 20px,
+    $lineColor 20px,
+    $lineColor 21px,
+    $lightGray 21px,
+    $lightGray
+  );
   background-size: 60px 60px;
   background-position: top left;
   position: relative;
 
-  &::after{
+  &::after {
     content: '';
     display: none;
     top: 0;
@@ -14,91 +24,105 @@ $lineColor: rgba(106,187,222,.25);
     height: 100%;
     width: 40px;
     position: absolute;
-    background-image: radial-gradient($lightGray, $lightGray 5px, rgba(#000,.1) 10px, transparent 10px);
+    background-image: radial-gradient(
+      $lightGray,
+      $lightGray 5px,
+      rgba(#000, 0.1) 10px,
+      transparent 10px
+    );
     background-size: 40px 40px;
 
-    @include grid-media($grid-lg){
+    @include grid-media($grid-lg) {
       display: block;
     }
   }
-  
 
-  @include grid-media($grid-xs, $grid-sm){
-    &::after{
+  @include grid-media($grid-xs, $grid-sm) {
+    &::after {
       display: none;
     }
   }
 }
 
-.hero-left{
+.hero-left {
   @include grid-column(6);
   padding: 60px 0;
 
-  @include grid-media($grid-xs){
+  @include grid-media($grid-xs) {
     @include grid-column(4);
     @include grid-push(0);
     text-align: center;
+    padding: 30px 0;
   }
 
-  @include grid-media($grid-lg){
+  @include grid-media($grid-lg) {
     @include grid-column(7);
     padding-left: 40px;
   }
 
-  @include grid-media($grid-xl){
+  @include grid-media($grid-xl) {
     @include grid-column(5);
     @include grid-push(2);
   }
 
-  @include grid-media($grid-sm){
+  @include grid-media($grid-sm) {
     @include grid-column(4);
     @include grid-push(0);
   }
 }
 
-.logo{
+.logo {
   width: 400px;
   margin: 0 0 40px;
 
-  @include grid-media($grid-xs, $grid-sm){
+  @include grid-media($grid-xs, $grid-sm) {
     max-width: 280px;
     margin: 0 auto 30px;
   }
 }
 
-.hero-title{
+.hero-title {
   font: $bold 1.6em $font;
   color: $red;
   position: relative;
 
-  @include grid-media($grid-xs, $grid-sm){
+  @include grid-media($grid-xs, $grid-sm) {
     margin: 0 0 30px;
     font-size: 1.3em;
-    padding: 30px 20px 20px;
+    padding: 0;
     text-align: center;
   }
 
-  &::after{ left: 30px; }
-  &::before{ right: 30px; }
-}
-
-.hero-text{
-  @include paragraph;
-  margin-bottom: 30px;
-  
-  @include grid-media($grid-xs, $grid-sm){
-    margin-right: 0;
+  &::after {
+    left: 30px;
+  }
+  &::before {
+    right: 30px;
   }
 }
 
-.hero-topics{
+.hero-text {
+  @include paragraph;
+  margin-bottom: 30px;
+
+  @include grid-media($grid-xs, $grid-sm) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.hero-topics {
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+
+  @include grid-media($grid-xs) {
+    display: none;
+  }
 }
 
-.hero-topicIcon{
+.hero-topicIcon {
   color: $red;
   margin-right: 10px;
   width: 20px;
@@ -106,7 +130,7 @@ $lineColor: rgba(106,187,222,.25);
   vertical-align: text-bottom;
 }
 
-.hero-topic{
+.hero-topic {
   list-style: none;
   margin-bottom: 10px;
   font: $bold 0.9em $font;
@@ -116,34 +140,39 @@ $lineColor: rgba(106,187,222,.25);
   width: 100%;
 }
 
-.hero-form{
+.hero-form {
   @include grid-column(6);
   background: #fff;
-  box-shadow: 0 0 10px rgba(#000,.1);
-  
-  @include grid-media($grid-xs){
+  box-shadow: 0 0 10px rgba(#000, 0.1);
+
+  @include grid-media($grid-xs) {
     width: 100%;
     margin: 0;
   }
 
-  @include grid-media($grid-xl){
+  @include grid-media($grid-xl) {
     @include grid-column(4);
     @include grid-push(1);
   }
-  
-  @include grid-media($grid-sm){
+
+  @include grid-media($grid-sm) {
     @include grid-column(4);
   }
 }
 
-.hero-AuthorImage{
+.hero-AuthorImage {
   margin: 0;
+
+  @include grid-media($grid-xs) {
+    display: none;
+  }
 }
-.hero-formContent{
+
+.hero-formContent {
   padding: 40px 30px;
 }
 
-.subscribeForm-title{
+.subscribeForm-title {
   margin: 0 0 20px;
   font: $bold 1.5em $font;
   text-align: center;

@@ -62,7 +62,7 @@ const SubscribeForm = props => {
 
   return (
     <form className='subscribeForm' onSubmit={handleFormSubmit}>
-      <h3 className='subscribeForm-title'>Inscrições encerradas</h3>
+      <h3 className='subscribeForm-title'>Preencha com seus dados</h3>
       <TextInput
         label='Nome'
         name='userName'

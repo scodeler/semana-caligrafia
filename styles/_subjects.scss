@@ -1,48 +1,57 @@
-.subjects{
-  padding: 60px 0;
+.subjects {
+  padding: 50px 0;
   background: $veryLightGreen;
+
+  @include grid-media($grid-xs) {
+    padding: 0;
+  }
 }
 
-.subjects-title{
+.subjects-title {
   font: $bold 2em $font;
   color: $darkGreen;
   text-align: center;
   @include grid-column(12);
+  margin-top: 0;
 }
 
-.subjects-list{
+.subjects-list {
   @include grid-column(8);
   @include grid-push(2);
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 
-  @include grid-media($grid-xl){
+  @include grid-media($grid-xl) {
     @include grid-column(6);
     @include grid-push(4);
   }
 
-  @include grid-media($grid-sm){
+  @include grid-media($grid-sm) {
     @include grid-column(8);
     @include grid-push(0);
   }
-  
-  @include grid-media($grid-xs){
+
+  @include grid-media($grid-xs) {
     @include grid-column(4);
     @include grid-push(0);
   }
 }
 
-.subjects-item{
+.subjects-item {
   display: flex;
   padding: 0;
   align-items: center;
   margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 $calendar-radius: 8px;
 
-.subject-calendar{
+.subject-calendar {
   min-width: 80px;
   height: 80px;
   display: flex;
@@ -50,15 +59,15 @@ $calendar-radius: 8px;
   text-align: center;
   margin-right: 40px;
   border-radius: $calendar-radius;
-  box-shadow: 0 0 15px rgba($darkGray, .3);
-  
-  @include grid-media($grid-xs){
+  box-shadow: 0 0 15px rgba($darkGray, 0.3);
+
+  @include grid-media($grid-xs) {
     margin-right: 20px;
     display: none;
   }
 }
 
-.subject-month{
+.subject-month {
   font: $bold 0.9em $font;
   color: $white;
   background: $red;
@@ -68,7 +77,7 @@ $calendar-radius: 8px;
   border-top-right-radius: $calendar-radius;
 }
 
-.subject-day{
+.subject-day {
   border-bottom-left-radius: $calendar-radius;
   border-bottom-right-radius: $calendar-radius;
   font: $bold 2em $font;
@@ -80,14 +89,13 @@ $calendar-radius: 8px;
   justify-content: center;
   color: $darkGray;
 }
-.subject-content{
+.subject-content {
   flex: 1;
 }
 
-.subject-title{
+.subject-title {
   font: $bold 1em $font;
   text-transform: uppercase;
   color: $red;
   margin: 0 0 20px;
 }
-
