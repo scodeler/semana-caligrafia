@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { ImWhatsapp } from 'react-icons/im'
-import axios from 'axios'
+// import axios from 'axios'
 // import groups from '../groups'
 
 const WhatsappRedirect = () => {
