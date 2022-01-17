@@ -3,7 +3,7 @@ export default async (req, res) => {
   try {
     const { db } = await connectToDatabase()
     const groupData = await db.collection('whatsapp').find({}).toArray()
-    if (groupData[0].users > 300) {
+    if (groupData[0].users > 260) {
       const updatedUserCount = 0
       await db
         .collection('whatsapp')
