@@ -15,7 +15,7 @@ const WhatsappRedirect = () => {
     setTimeout(async () => {
       const whatsappData = await fetchGroup()
       const whatsappLink = groups[whatsappData.group]
-      router.push(whatsappLink)
+      router.push('https://chat.whatsapp.com/EEoEADuaLLNDviFIJwWQ1L')
     }, 1000)
   })
   return (
