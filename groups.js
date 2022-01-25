@@ -19,6 +19,11 @@ const groups = {
   18: 'https://chat.whatsapp.com/JNruaMQQ4axIQyRW1O6CgX',
   19: 'https://chat.whatsapp.com/Js8t1ClEPuL51VNflqzPNf',
   20: 'https://chat.whatsapp.com/C0CdMd7UEzhLvEihcvHohI',
+  21: 'https://chat.whatsapp.com/LK7QmZyJOxo9feB3r9LNrE',
+  22: 'https://chat.whatsapp.com/BWqr4kYa8EN6ZeH27j3t6B',
+  23: 'https://chat.whatsapp.com/LO2hqSs6dp764YjZ2mOxcP',
+  24: 'https://chat.whatsapp.com/KPfkI2nKqZmFJEc27bHhH2',
+  25: 'https://chat.whatsapp.com/EXdFYzWXh2C5ZCFzBqH2Mp',
 }
 
 export default groups
