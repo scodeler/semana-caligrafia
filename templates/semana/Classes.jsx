@@ -1,15 +1,12 @@
 import { useRouter } from 'next/router'
 import { FiLock } from 'react-icons/fi'
-import { ImWhatsapp } from 'react-icons/im'
+import { IoLogoFacebook } from 'react-icons/io'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import classes from '../../classes'
-import { useEffect } from 'react'
 
 const Classes = props => {
   const router = useRouter()
-  useEffect(() => {
-    router.push('/inscricao')
-  }, [])
+
   return (
     <section className='classes'>
       <div className='videos'>
@@ -67,13 +64,13 @@ const Classes = props => {
         </nav>
         <div className='classes-bottom'>
           <a
-            className='link-whatsapp'
-            href='/whatsapp-vip'
+            className='facebook-button'
+            href='https://www.facebook.com/groups/semanadacaligrafia.letrascomalma2'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <ImWhatsapp />
-            Entrar no Grupo VIP
+            <IoLogoFacebook />
+            Entrar na Comunidade
           </a>
         </div>
       </div>
