@@ -42,6 +42,8 @@ const groups = {
   41: 'https://chat.whatsapp.com/JFJPZf1YY8N6y3TcmwJhSa',
   42: 'https://chat.whatsapp.com/LU3Ot8OSgyoKAXl2w4Qfuw',
   43: 'https://chat.whatsapp.com/HkbPg2tNdGy1W7WREzsjVd',
+  44: 'https://chat.whatsapp.com/JXYQqx8qN5W4D4QjeyqEU8',
+  45: 'https://chat.whatsapp.com/KtA6kKROEHODfJcv3E4dDH',
 }
 
 export default groups
