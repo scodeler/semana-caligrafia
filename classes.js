@@ -13,9 +13,9 @@ const classes = [
     label: 'Aula 2',
     type: 'class',
     date: 'QUA - 02/02',
-    videoId: 'JfEyt5f1-iQ',
+    videoId: 'VA1xrw_FS_A',
     title: 'Transformando letras em arte',
-    locked: true,
+    locked: false,
   },
   {
     index: 3,
