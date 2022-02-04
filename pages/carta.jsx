@@ -89,7 +89,7 @@ const Carta = () => {
         </p>
 
         <p dir='ltr'>
-          E olha s&oacute; o KIT EXCLUSIVO que os 25 primeiros v&atilde;o
+          E olha s&oacute; o KIT EXCLUSIVO que os 20 primeiros v&atilde;o
           receber 👇
         </p>
 
@@ -97,7 +97,7 @@ const Carta = () => {
 
         <p dir='ltr'>
           <em>
-            (Imagem do Kit exclusivo para os 25 primeiros inscritos contendo 1
+            (Imagem do Kit exclusivo para os 20 primeiros inscritos contendo 1
             caderno de pauta, 1 sketchbook, 1 caneta Brush Pen, 1 caneta
             esferogr&aacute;fica, adesivos personalizados.)
           </em>
@@ -105,7 +105,7 @@ const Carta = () => {
 
         <br />
         <p dir='ltr'>
-          As inscri&ccedil;&otilde;es v&atilde;o abrir &agrave;s&nbsp; 08H DA
+          As inscri&ccedil;&otilde;es v&atilde;o abrir &agrave;s&nbsp; 08h DA
           MANH&Atilde; &nbsp;⏰ (hor&aacute;rio de Bras&iacute;lia). Seja
           r&aacute;pida se quiser garantir o ATENDIMENTO INDIVIDUAL comigo e o
           KIT EXCLUSIVO.
@@ -115,8 +115,8 @@ const Carta = () => {
 
         <p dir='ltr'>
           Como eu disse, foram &nbsp;mais de 13 mil inscritos nesse evento .
-          Como esta ser&aacute; a &uacute;ltima turma do ano eu acredito que
-          teremos uma grande quantidade de pessoas interessadas.
+          Devido a isso, eu acredito que teremos uma grande quantidade de
+          pessoas interessadas.
         </p>
 
         <p dir='ltr'>
@@ -147,7 +147,7 @@ const Carta = () => {
         </p>
 
         <p dir='ltr'>
-          No pr&oacute;ximo ano, prometemos investir para melhorar nossa
+          Quem sabe em breve seja possível investir para melhorar nossa
           capacidade de atendimento. 😉
         </p>
 
@@ -156,7 +156,7 @@ const Carta = () => {
         <h3 dir='ltr'>PARA SE INSCREVER &eacute; f&aacute;cil 👇</h3>
 
         <p dir='ltr'>
-          1️⃣&nbsp; Segunda-feira, dia 06, &agrave;s 08h da manh&atilde; ,
+          1️⃣&nbsp; Segunda-feira, dia 07, &agrave;s 08h da manh&atilde; ,
           voc&ecirc; vai receber no email o link da p&aacute;gina de
           inscri&ccedil;&atilde;o da ESCOLA DE CALIGRAFIA. L&aacute;, voc&ecirc;
           vai encontrar todas as informa&ccedil;&otilde;es sobre o curso: quais
