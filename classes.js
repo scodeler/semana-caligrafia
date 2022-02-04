@@ -22,9 +22,9 @@ const classes = [
     label: 'Aula 3',
     type: 'class',
     date: 'SEX - 04/02',
-    videoId: 'fTtb71y3mLI',
+    videoId: 'DacBRxv6djM',
     title: 'Vencendo os últimos obstáculos',
-    locked: true,
+    locked: false,
   },
 ]
 
