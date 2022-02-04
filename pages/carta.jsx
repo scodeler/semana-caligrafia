@@ -179,6 +179,8 @@ const Carta = () => {
           EXCLUSIVO.
         </p>
 
+        <Image width={800} height={543} src='/kit-flatlay.png' />
+
         <p dir='ltr'>
           3️⃣&nbsp; Para entrar do Grupo Vip &nbsp;e ter a chance de estar entre
           os primeiros, &eacute; s&oacute; clicar abaixo:
