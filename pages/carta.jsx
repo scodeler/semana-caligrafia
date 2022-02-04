@@ -1,8 +1,12 @@
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Carta = () => {
   return (
     <section className='carta'>
+      <Head>
+        <title>Carta aos participantes da Semana da Caligrafia</title>
+      </Head>
       <div
         className='container'
         style={{ margin: '80px auto 50px', padding: '0 30px', maxWidth: 800 }}
